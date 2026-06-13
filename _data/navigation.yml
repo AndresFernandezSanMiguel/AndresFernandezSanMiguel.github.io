@@ -22,6 +22,9 @@ main:
         
   - title: "Molecular Element Method"
     url: /MEM/
+
+  - title: "FA for Mechanics"
+    url: /FA/
     
   - title: "CV"
     url: /cv/
