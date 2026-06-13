@@ -22,6 +22,12 @@ main:
         
   - title: "Molecular Element Method"
     url: /MEM/
+    children:
+       -title: "Linear Analysis"
+       -url: /linear/
+
+       -title: "Non-linear analysis"
+       -url: /Nonlinear/    
 
   - title: "FA for Mechanics"
     url: /FA/
