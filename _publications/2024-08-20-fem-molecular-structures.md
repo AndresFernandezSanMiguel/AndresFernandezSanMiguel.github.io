@@ -1,6 +1,7 @@
 ---
 title: "A first order FEM-based formulation for the analysis of molecular structures with bonded interactions"
 collection: publications
+category: manuscripts
 permalink: /publication/fem-molecular-structures/
 
 date: 2024-08-20
