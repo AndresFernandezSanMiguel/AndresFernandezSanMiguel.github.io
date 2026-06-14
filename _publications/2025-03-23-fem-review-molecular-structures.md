@@ -4,6 +4,7 @@ title: "A Comparative Review of FEM Like Techniques Applied to the Linear Analys
 
 collection: publications
 category: manuscripts
+
 permalink: /publication/fem-review-molecular-structures/
 
 date: 2025-03-23
