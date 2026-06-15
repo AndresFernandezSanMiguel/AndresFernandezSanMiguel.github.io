@@ -12,10 +12,10 @@ I am a postdoctoral researcher in the Numerical Methods Group at the University 
 
 ## Research Interests
 
-- Molecular Mechanics \( \cap \) Finite Element Method
+- Molecular Mechanics $\cap$ Finite Element Method
 - Molecular Dynamics
-- Theory of Elasticity \( \cap \) Multiscale Modeling
-- Quaresma's trivelas \( \cup \) Nonlinear Solid Mechanics
+- Theory of Elasticity $\cap$ Multiscale Modeling
+- Quaresma's trivelas $\cup$ Nonlinear Solid Mechanics
 
 
 
