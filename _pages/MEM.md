@@ -4,7 +4,7 @@ permalink: /MEM/
 author_profile: true
 ---
 
-Some tutorials on the Molecular Elements Method and its application to the elastic calculation of atomic structures.
+Some tutorials on the Molecular Element Method (MEM) and its application to the elastic analysis of atomic structures.
 
 The theoretical details and recommended references are:
 
@@ -21,5 +21,7 @@ In the case of linear elasticity, given the positions of $$N$$ nuclei and the po
 $$\color{BlueGreen}\triangle$$ $$\mathbf{K} \boldsymbol{u}=\boldsymbol{f} \Leftarrow$$ Static Analysis 
 
 $$\color{BlueGreen}\triangle$$ $$\mathbf{K} \boldsymbol{\phi}_i=\lambda_i \mathbf{M} \boldsymbol{\phi}_i$$ Molecular Vibrations
+
+where $$\mathbf{K}$$ refers to the stiffness matrix or Hessian of the system, $$\mathbf{M}$$ to the mass matrix, $$\boldsymbol{f}$$ to the vector of external forces, $$\boldsymbol{u}$$ to the global displacement and $$\lambda_i$$ to the eigenvalue with eigenvector $$$\boldsymbol{\phi}_i$$. 
 
 
