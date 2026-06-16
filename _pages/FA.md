@@ -12,6 +12,8 @@ $$\color{yellow}\star$$ [*Analysis*](https://bookstore.ams.org/view?ProductCode=
 
 $$\color{yellow}\star$$ [*Applied Functional Analysis*](https://www.taylorfrancis.com/books/mono/10.1201/9781315119489/applied-functional-analysis-tinsley-oden-leszek-demkowicz), JT Oden $$\&$$ L Demkowicz 
 
+$$\color{yellow}\star$$ [*Functional Analysis*](https://www.youtube.com/watch?v=OonaUALrKUk&list=PLo4jXE-LdDTTIIIRwqK35CbFJieSJEcVR), Claudio Landim Landim
+
 ## Contents
 
 
