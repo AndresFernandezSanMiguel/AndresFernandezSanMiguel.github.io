@@ -1,6 +1,6 @@
 ---
 title: "Molecular Element Method"
-permalink: /FA/
+permalink: /MEM/
 author_profile: true
 ---
 
