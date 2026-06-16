@@ -8,16 +8,16 @@ Some tutorials on the Molecular Elements Method and its application to the elast
 
 The theoretical details and recommended references are:
 
-$$\color{yellow}$$ [*The Molecular Element Method (MEM): A FEM-based Formulation for Linear and Non-Linear Molecular Elasticity*](https://ruc.udc.es/entities/publication/d0df64f6-4666-431f-9fbd-0e0f903c5b06)
+$$\color{yellow}\star$$ [*The Molecular Element Method (MEM): A FEM-based Formulation for Linear and Non-Linear Molecular Elasticity*](https://ruc.udc.es/entities/publication/d0df64f6-4666-431f-9fbd-0e0f903c5b06)
 A. Fernández-San Miguel, I. Couceiro $$\&$$ L. Ramírez
 
-$$\color{yellow}$$ [*A first order FEM-based formulation for the analysis of molecular structures with bonded interactions*](https://link.springer.com/article/10.1007/s00366-024-02085-w)
+$$\color{yellow}\star$$ [*A first order FEM-based formulation for the analysis of molecular structures with bonded interactions*](https://link.springer.com/article/10.1007/s00366-024-02085-w)
 A. Fernández-San Miguel, I. Couceiro, L. Ramírez $$\&$$ F. Navarrina
 
 ## Linear Analysis
 
 In the case of linear elasticity, given the positions of $$N$$ nuclei and the potential energy $$V: \mathbb{R} \in \mathbb{R}^{3N} \mapsto \mathbb{R}$$ associated with the user's preferred classical force field, the method allows for the exact and rigorous assembly and solution of: 
 
-$$\color[HTML]{52ADC8}\triangle$$ $$\mathbf{K} \boldsymbol{u}=\boldsymbol{f} \Leftarrow$$ Static Analysis 
+$$\color{BlueGreen}\triangle$$ $$\mathbf{K} \boldsymbol{u}=\boldsymbol{f} \Leftarrow$$ Static Analysis 
 
 
