@@ -14,6 +14,6 @@ $$\color{yellow}\star$$ [*Applied Functional Analysis*](https://www.taylorfranci
 
 $$\color{yellow}\star$$ [*Functional Analysis*](https://www.youtube.com/watch?v=OonaUALrKUk&list=PLo4jXE-LdDTTIIIRwqK35CbFJieSJEcVR), Claudio Landim Landim
 
-## Contents
+## Videos
 
 
