@@ -16,8 +16,10 @@ A. Fernández-San Miguel, I. Couceiro, L. Ramírez $$\&$$ F. Navarrina
 
 ## Linear Analysis
 
-In the case of linear elasticity, given the positions of $$N$$ nuclei and the potential energy $$V: \mathbb{R} \in \mathbb{R}^{3N} \mapsto \mathbb{R}$$ associated with the user's preferred classical force field, the method allows for the exact and rigorous assembly and solution of: 
+In the case of linear elasticity, given the positions of $$N$$ nuclei and the potential energy $$V: \mathbb{R}^{3N}  \mapsto \mathbb{R}$$ associated with the user's preferred classical force field, the method allows for the exact and rigorous assembly and solution of: 
 
 $$\color{BlueGreen}\triangle$$ $$\mathbf{K} \boldsymbol{u}=\boldsymbol{f} \Leftarrow$$ Static Analysis 
+
+$$\color{BlueGreen}\triangle$$ $$\mathbf{K} \boldsymbol{phi}_i=\lambda_i \mathbf{M} \boldsymbol{\phi}_i$$ Molecular Vibrations
 
 
