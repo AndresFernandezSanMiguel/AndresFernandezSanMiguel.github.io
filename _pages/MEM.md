@@ -22,6 +22,6 @@ $$\color{BlueGreen}\triangle$$ $$\mathbf{K} \boldsymbol{u}=\boldsymbol{f} \Lefta
 
 $$\color{BlueGreen}\triangle$$ $$\mathbf{K} \boldsymbol{\phi}_i=\lambda_i \mathbf{M} \boldsymbol{\phi}_i$$ Molecular Vibrations
 
-where $$\mathbf{K}$$ refers to the stiffness matrix or Hessian of the system, $$\mathbf{M}$$ to the mass matrix, $$\boldsymbol{f}$$ to the vector of external forces, $$\boldsymbol{u}$$ to the global displacement and $$\lambda_i$$ to the eigenvalue with eigenvector $$$\boldsymbol{\phi}_i$$. 
+where $$\mathbf{K}$$ refers to the stiffness matrix or Hessian of the system, $$\mathbf{M}$$ to the mass matrix, $$\boldsymbol{f}$$ to the vector of external forces, $$\boldsymbol{u}$$ to the global displacement vector and $$\lambda_i$$ to the eigenvalue with eigenvector $$\boldsymbol{\phi}_i$$. 
 
 
