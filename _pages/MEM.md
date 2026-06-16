@@ -14,6 +14,10 @@ A. Fernández-San Miguel, I. Couceiro $$\&$$ L. Ramírez
 $$\color{yellow}$$ [*A first order FEM-based formulation for the analysis of molecular structures with bonded interactions*](https://link.springer.com/article/10.1007/s00366-024-02085-w)
 A. Fernández-San Miguel, I. Couceiro, L. Ramírez $$\&$$ F. Navarrina
 
-## Contents
+## Linear Analysis
+
+In the case of linear elasticity, given the positions of $$N$$ nuclei and the potential energy $V: \mathbb{R} \in \mathbb{R}^{3N}$ associated with the user's preferred classical force field, the method allows for the exact and rigorous assembly and solution of: 
+
+$$\color{blue}\triangle$$ $$\mathbf{K} \boldsymbol{u}=\boldsymbol{f} \Leftarrow$$ Static Analysis 
 
 
