@@ -8,7 +8,7 @@ redirect_from:
 mathjax: true
 ---
 
-I am a postdoctoral researcher in the Numerical Methods Group at the University of A Coruña ([GMNI](https://caminos.udc.es/gmni/)). My work focuses on solid mechanics and, in particular, on the simulation of nanostructures using computational mechanics techniques, ranging from carbon structures to proteins. In my PhD thesis, I focused on the development of the Molecular Element Method (MEM), a framework for the elastic simulation of molecular structures using both linear and nonlinear theories.
+I am a postdoctoral researcher in the Numerical Methods Group at the University of A Coruña ([GMNI](https://caminos.udc.es/gmni/)). My work focuses on solid mechanics and, in particular, on the simulation of nanostructures using computational mechanics techniques, ranging from carbon structures to proteins. In my PhD thesis, together with some colleagues, I focused on developing the Molecular Element Method (MEM), a framework for the elastic simulation of molecular structures using both linear and nonlinear theories.
 
 ## Research Interests
 
