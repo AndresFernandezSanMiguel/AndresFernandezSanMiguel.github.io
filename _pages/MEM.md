@@ -26,6 +26,8 @@ where $$\mathbf{K}$$ refers to the stiffness matrix or Hessian of the system, $$
 
 <img src="/images/logo_saoas.png" width="300">
 
+this program solves $$\mathbf{K} \int$$ 
+ 
 **Tutorial 1 $$\Rightarrow$$ Theoretical background**
 
 We present the theoretical basis for using our SAOAS code for the linear static and vibrational analysis of molecular structures.
