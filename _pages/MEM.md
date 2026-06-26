@@ -24,7 +24,11 @@ $$\color{BlueGreen}\triangle$$ $$\mathbf{K} \boldsymbol{\phi}_i=\lambda_i \mathb
 
 where $$\mathbf{K}$$ refers to the stiffness matrix or Hessian of the system, $$\mathbf{M}$$ to the mass matrix, $$\boldsymbol{f}$$ to the vector of external forces, $$\boldsymbol{u}$$ to the global displacement vector and $$\lambda_i$$ to the eigenvalue with eigenvector $$\boldsymbol{\phi}_i$$. 
 
-<img src="AndresFernandezSanMiguel.github.io/images/logo_sao_mod_gris.pdf">
+<iframe
+src="/images/logo_sao_mod_gris.pdf"
+width="100%"
+height="700px">
+</iframe>
 
 **Tutorial 1 $$\Rightarrow$$ Theoretical background**
 
