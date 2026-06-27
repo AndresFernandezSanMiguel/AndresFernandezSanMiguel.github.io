@@ -9,7 +9,7 @@ A course on functional analysis with a focus on its application to the Finite El
 ## Contents
 
 1. [References](#references)
-2. [Fundamental Properties](#fundamentalproperties)
+2. [Fundamental Properties](#fundamental-properties)
 
 ## References
 
