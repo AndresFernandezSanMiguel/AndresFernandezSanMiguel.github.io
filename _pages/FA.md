@@ -22,3 +22,9 @@ $$\color{yellow}\star$$ [*Applied Functional Analysis*](https://www.taylorfranci
 $$\color{yellow}\star$$ [*Functional Analysis*](https://www.youtube.com/watch?v=OonaUALrKUk&list=PLo4jXE-LdDTTIIIRwqK35CbFJieSJEcVR), Claudio Landim Landim
 
 ## Fundamental properties
+
+In what follows, we will prove certain properties by considering the field of complexes $$\mathbb{C}$$; 
+the case for real numbers follows immediately.
+
+**Def 1.1 Inner product**.  Let $$X$$ be a linear space with field $\mathbb{C}$, a map $$X \times X \mapsto \mathbb{C}$$
+if:
