@@ -29,11 +29,9 @@ the case for real numbers follows immediately.
 **Def 1.1 Inner product**.  Let $$X$$ be a linear space with field $$\mathbb{C}$$, a map $$X \times X \mapsto \mathbb{C}$$
 if:
 
-$$
-\begin{enumerate}
-\item[\circ] \text{Linearity}: \langle \alpha x+y,z \rangle 
-\end{enumerate}
-$$
+- **Linearity** $$\langle \alpha x +y,z \rangle=\alpha \langle x,y \rangle+\langle y,z \rangle \forall \alpha \in \mathbb{C}, \forall x,y,z \in \mathbb{X}$$
+- aaa
+- jaja
 
 **Teorema** (Riesz): Todo funcional lineal continuo en un espacio de Hilbert $H$ ...
 
