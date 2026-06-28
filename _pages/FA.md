@@ -26,17 +26,16 @@ $$\color{yellow}\star$$ [*Functional Analysis*](https://www.youtube.com/watch?v=
 In what follows, we will prove certain properties by considering the field of complexes $$\mathbb{C}$$; 
 the case for real numbers follows immediately.
 
-**Def 1.1 Inner product**.  Let $$X$$ be a linear space with field $$\mathbb{C}$$, a map $$\langle , \rangle: X \times X \mapsto \mathbb{C}$$
+**Def 2.1 Inner product**.  Let $$X$$ be a linear space with field $$\mathbb{C}$$, a map $$\langle , \rangle: X \times X \mapsto \mathbb{C}$$
 if:
 
 - **Linearity:** $$\langle \alpha x +y,z \rangle=\alpha \langle x,y \rangle+\langle y,z \rangle \forall \alpha \in \mathbb{C}, \forall x,y,z \in \mathbb{X}$$
 - **Conjugate symmetry:** $$\langle x,y \rangle=\overline{\langle y,x \rangle} \forall x,y \in \mathbb{X}$$
 - **Positivity:** $$\langle x,x \rangle>0 \forall x \neq 0$$
-
-**Teorema** (Riesz): Todo funcional lineal continuo en un espacio de Hilbert $H$ ...
+**Property 2.2 Schwartz Inequality** $$\vert \langle x,y \rangle \vert \leq \lVert x \rVert \lVert y \rVert$$
 
 <details>
-<summary><strong>Demostración</strong></summary>
+<summary><strong>Proof</strong></summary>
 
 Sea $f \in H^*$. Si $f = 0$, tomamos $u = 0$...
 
