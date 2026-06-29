@@ -32,7 +32,7 @@ if:
 - **Linearity:** $$\langle \alpha x +y,z \rangle=\alpha \langle x,y \rangle+\langle y,z \rangle \forall \alpha \in \mathbb{C}, \forall x,y,z \in \mathbb{X}$$
 - **Conjugate symmetry:** $$\langle x,y \rangle=\overline{\langle y,x \rangle} \forall x,y \in \mathbb{X}$$
 - **Positivity:** $$\langle x,x \rangle>0 \forall x \neq 0$$
-- 
+ 
 **Property 2.2 Schwartz Inequality** $$\vert \langle x,y \rangle \vert \leq \lVert x \rVert \lVert y \rVert$$
 
 <details>
