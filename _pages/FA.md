@@ -38,10 +38,31 @@ if:
 <details>
 <summary><strong>Proof</strong></summary>
 
-Sea $f \in H^*$. Si $f = 0$, tomamos $u = 0$...
+Given the properties of the inner product, the following holds:
 
-$$\langle u, v \rangle = f(v) \quad \forall v \in H$$
+$$
+\langle \hat{x}+ty,\hat{x}+ty \rangle=t^2 \langle y,y \rangle+2t\text{Re} \langle x,y \rangle+\langle \hat{x},\hat{x} \rangle \geq 0
+$$
 
-Lo que concluye la prueba. $\blacksquare$
+which holds if the discriminant satisfies:
+
+$$
+\text{Re} \langle \hat{x},y \rangle \leq \sqrt{\langle \hat{x},\hat{x} \rangle \langle y,y \rangle}
+$$
+
+since it holds for any  $$\hat{x} \in X$$ when taking $$\hat{x}=e^{-i \theta} x $$, we obtain that:
+
+$$
+\text{Re} \left[ e^{-i \theta}\langle x,y \rangle \right] \leq \langle x,x \rangle \langle y,y \rangle
+$$
+
+But since every complex number has the following property:
+
+$$
+\langle x,y \rangle=\lvert \langle x,y \rangle \rvert e^{i \theta}
+$$
+
+then the property holds $$\square$$
+
 
 </details>
