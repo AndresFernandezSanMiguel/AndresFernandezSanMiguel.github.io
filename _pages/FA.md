@@ -40,22 +40,22 @@ In what follows, we will prove certain properties by considering the field of co
 
 For any \(t \in \mathbb{R}\) and \(\hat{x} \in X\), positivity of the inner product gives:
 
-\(\langle \hat{x}+ty, \hat{x}+ty \rangle = t^2 \langle y,y \rangle + 2t\,\text{Re}\langle \hat{x},y \rangle + \langle \hat{x},\hat{x} \rangle \geq 0\)
+\[\langle \hat{x}+ty, \hat{x}+ty \rangle = t^2 \langle y,y \rangle + 2t\,\text{Re}\langle \hat{x},y \rangle + \langle \hat{x},\hat{x} \rangle \geq 0\]
 
 This is a quadratic in \(t\) that is non-negative for all \(t \in \mathbb{R}\), so its discriminant must satisfy:
 
-\(\left(\text{Re}\langle \hat{x},y \rangle\right)^2 \leq \langle \hat{x},\hat{x} \rangle \langle y,y \rangle\)
+\[\left(\text{Re}\langle \hat{x},y \rangle\right)^2 \leq \langle \hat{x},\hat{x} \rangle \langle y,y \rangle\]
 
 hence:
 
-\(\text{Re}\langle \hat{x},y \rangle \leq \sqrt{\langle \hat{x},\hat{x} \rangle \langle y,y \rangle}\)
+\[\text{Re}\langle \hat{x},y \rangle \leq \sqrt{\langle \hat{x},\hat{x} \rangle \langle y,y \rangle}\]
 
 Since this holds for any \(\hat{x} \in X\), we take \(\hat{x} = e^{-i\theta}x\) where \(\theta = \arg\langle x,y \rangle\). Then:
 
-\(\text{Re}\left[e^{-i\theta}\langle x,y \rangle\right] = \text{Re}\left[\lvert \langle x,y \rangle \rvert e^{i\theta} e^{-i\theta}\right] = \lvert \langle x,y \rangle \rvert\)
+\[\text{Re}\left[e^{-i\theta}\langle x,y \rangle\right] = \text{Re}\left[\lvert \langle x,y \rangle \rvert e^{i\theta} e^{-i\theta}\right] = \lvert \langle x,y \rangle \rvert\]
 
 and \(\langle \hat{x},\hat{x} \rangle = \langle e^{-i\theta}x, e^{-i\theta}x \rangle = \langle x,x \rangle\), so substituting:
 
-\(\lvert \langle x,y \rangle \rvert \leq \sqrt{\langle x,x \rangle \langle y,y \rangle} = \lVert x \rVert \lVert y \rVert \qquad \square\)
+\[\lvert \langle x,y \rangle \rvert \leq \sqrt{\langle x,x \rangle \langle y,y \rangle} = \lVert x \rVert \lVert y \rVert \qquad \square\]
 
 </details>
