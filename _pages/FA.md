@@ -2,6 +2,7 @@
 title: "Functional Analysis for Mechanics"
 permalink: /FA/
 author_profile: true
+mathjax: true
 ---
 
 A course on functional analysis with a focus on its application to the Finite Element Method and Density Functional Theory. 
