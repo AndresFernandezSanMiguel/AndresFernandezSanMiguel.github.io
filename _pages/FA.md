@@ -93,3 +93,33 @@ $$\lVert \alpha x \rVert = \sqrt{\langle \alpha x, \alpha x \rangle} = \sqrt{\al
 $$\lVert x+y \rVert \leq \lVert x \rVert + \lVert y \rVert \qquad \square$$
 
 </details>
+
+**Property 2.5 Parallelogram Identity** $\lVert x+y \rVert^2 + \lVert x-y \rVert^2 = 2(\lVert x \rVert^2 + \lVert y \rVert^2)$
+
+<details>
+<summary><strong>Proof</strong></summary>
+
+Expanding both terms using the inner product:
+
+$$\lVert x+y \rVert^2 = \langle x+y, x+y \rangle = \lVert x \rVert^2 + 2\,\text{Re}\langle x,y \rangle + \lVert y \rVert^2$$
+
+$$\lVert x-y \rVert^2 = \langle x-y, x-y \rangle = \lVert x \rVert^2 - 2\,\text{Re}\langle x,y \rangle + \lVert y \rVert^2$$
+
+Adding both expressions the cross terms cancel:
+
+$$\lVert x+y \rVert^2 + \lVert x-y \rVert^2 = 2\lVert x \rVert^2 + 2\lVert y \rVert^2 = 2(\lVert x \rVert^2 + \lVert y \rVert^2) \qquad \square$$
+
+</details>
+
+**Def 2.6 Orthogonality** Two elements $x, y \in X$ are orthogonal, denoted $x \perp y$, if:
+
+$$\langle x, y \rangle = 0$$
+
+More generally, an element $x \in X$ is orthogonal to a set $S \subset X$, denoted $x \perp S$, if:
+
+$$\langle x, y \rangle = 0 \quad \forall y \in S$$
+
+The orthogonal complement of $S$ is defined as:
+
+$$S^\perp = \{ x \in X : x \perp S \}$$
+
