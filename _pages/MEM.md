@@ -33,6 +33,8 @@ We present the theoretical basis for using our SAOAS code for the linear static 
 
 If you are a fan of Beamer presentations:
 
+<embed src="/files/prue.pdf" type="application/pdf" width="100%" height="600px" />
+
 **Tutorial 2 $$\Rightarrow$$ Installation of SAOAS**
 
 <img src="/images/logo_saoas.png" width="300">
