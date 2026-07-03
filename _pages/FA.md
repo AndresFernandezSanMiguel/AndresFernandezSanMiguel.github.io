@@ -25,7 +25,7 @@ $\color{yellow}{\star}$ [*Functional Analysis*](https://www.youtube.com/watch?v=
 
 In what follows, we will prove certain properties by considering the field of complexes $\mathbb{C}$; the case for real numbers follows immediately.
 
-<span style="color: #52adc8">**Def 2.1 Inner product.**</span> Let $X$ be a linear space with field $\mathbb{C}$, a map $\langle \cdot , \cdot \rangle: X \times X \mapsto \mathbb{C}$ is an inner product if:
+**Def 2.1 Inner product**. Let $X$ be a linear space with field $\mathbb{C}$, a map $\langle \cdot , \cdot \rangle: X \times X \mapsto \mathbb{C}$ is an inner product if:
 
 - **Linearity:** $\langle \alpha x +y,z \rangle=\alpha \langle x,z \rangle+\langle y,z \rangle \quad \forall \alpha \in \mathbb{C}, \forall x,y,z \in X$
 - **Conjugate symmetry:** $\langle x,y \rangle=\overline{\langle y,x \rangle} \quad \forall x,y \in X$
@@ -33,7 +33,7 @@ In what follows, we will prove certain properties by considering the field of co
 
 ---
 
-<span style="color: #52adc8">**Property 2.2 Schwarz Inequality. **</span>  $\vert \langle x,y \rangle \vert \leq \lVert x \rVert \lVert y \rVert$
+**Property 2.2 Schwarz Inequality** $\vert \langle x,y \rangle \vert \leq \lVert x \rVert \lVert y \rVert$
 
 <details>
 <summary><strong>Proof</strong></summary>
