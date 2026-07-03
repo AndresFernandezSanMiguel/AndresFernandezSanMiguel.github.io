@@ -27,21 +27,12 @@ $$\color{yellow}\star$$ [*Functional Analysis*](https://www.youtube.com/watch?v=
 In what follows, we will prove certain properties by considering the field of complexes $$\mathbb{C}$$; 
 the case for real numbers follows immediately.
 
----
-title: "Functional Analysis for Mechanics"
-permalink: /FA/
-author_profile: true
-mathjax: true
----
-
 **Def 2.1 Inner product**. Let $$X$$ be a linear space with field $$\mathbb{C}$$,
 a map $$\langle \cdot , \cdot \rangle: X \times X \mapsto \mathbb{C}$$ is an inner product if:
 
 - **Linearity:** $$\langle \alpha x +y,z \rangle=\alpha \langle x,z \rangle+\langle y,z \rangle \quad \forall \alpha \in \mathbb{C}, \forall x,y,z \in X$$
 - **Conjugate symmetry:** $$\langle x,y \rangle=\overline{\langle y,x \rangle} \quad \forall x,y \in X$$
 - **Positivity:** $$\langle x,x \rangle>0 \quad \forall x \neq 0$$
-
----
 
 **Property 2.2 Schwarz Inequality** $$\vert \langle x,y \rangle \vert \leq \lVert x \rVert \lVert y \rVert$$
 
