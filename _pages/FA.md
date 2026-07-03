@@ -59,3 +59,18 @@ and $\langle \hat{x},\hat{x} \rangle = \langle e^{-i\theta}x, e^{-i\theta}x \ran
 $$\lvert \langle x,y \rangle \rvert \leq \sqrt{\langle x,x \rangle \langle y,y \rangle} = \lVert x \rVert \lVert y \rVert \qquad \square$$
 
 </details>
+
+**Property 2.3 Triangle Inequality** $\lVert x+y \rVert \leq \lVert x \rVert + \lVert y \rVert$
+
+<details>
+<summary><strong>Proof</strong></summary>
+
+We start from:
+
+$$\lVert x+y \rVert = \sqrt{\lVert x \rVert^2 + 2\,\text{Re}\langle x,y \rangle + \lVert y \rVert^2} \leq \sqrt{\lVert x \rVert^2 + 2\lvert \langle x,y \rangle \rvert + \lVert y \rVert^2}$$
+
+Applying the Schwarz Inequality $\lvert \langle x,y \rangle \rvert \leq \lVert x \rVert \lVert y \rVert$:
+
+$$\leq \sqrt{\lVert x \rVert^2 + 2\lVert x \rVert \lVert y \rVert + \lVert y \rVert^2} = \sqrt{(\lVert x \rVert + \lVert y \rVert)^2} = \lVert x \rVert + \lVert y \rVert \qquad \square$$
+
+</details>
