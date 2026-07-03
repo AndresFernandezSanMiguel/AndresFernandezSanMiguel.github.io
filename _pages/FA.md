@@ -33,6 +33,8 @@ a map $$\langle \cdot , \cdot \rangle: X \times X \mapsto \mathbb{C}$$ is an inn
 - **Conjugate symmetry:** $$\langle x,y \rangle=\overline{\langle y,x \rangle} \quad \forall x,y \in X$$
 - **Positivity:** $$\langle x,x \rangle>0 \quad \forall x \neq 0$$
 
+---
+
 **Property 2.2 Schwarz Inequality** $$\vert \langle x,y \rangle \vert \leq \lVert x \rVert \lVert y \rVert$$
 
 <details>
