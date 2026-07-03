@@ -31,7 +31,7 @@ We present the theoretical basis for using our SAOAS code for the linear static 
 
 {% include video.html id="w4Grmfd7c9c" provider="youtube" %}
 
-If you're a fan of Beamer presentations:
+If you are a fan of Beamer presentations:
 
 **Tutorial 2 $$\Rightarrow$$ Installation of SAOAS**
 
