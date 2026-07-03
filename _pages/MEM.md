@@ -35,7 +35,7 @@ If you are a fan of Beamer presentations $$\Rightarrow$$ [Download Presentation 
 
 **Tutorial 2 $$\Rightarrow$$ Installation of SAOAS**
 
-<img src="/images/logo_saoas.png" width="300">
+<img src="/images/logo_saoas_trans.png" width="300">
 
 
 
