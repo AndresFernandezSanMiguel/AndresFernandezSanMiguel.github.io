@@ -33,7 +33,7 @@ $\color{Capri}{\textbf{Def 2.1}}$ **Inner product**. Let $X$ be a linear space w
 
 ---
 
-$\color{Capri}{\textbf{Property 2.2}}$ **Schwarz Inequality** $\vert \langle x,y \rangle \vert \leq \lVert x \rVert \lVert y \rVert$
+$\color{teal}{\textbf{Property 2.2}}$ **Schwarz Inequality** $\vert \langle x,y \rangle \vert \leq \lVert x \rVert \lVert y \rVert$
 <details>
 <summary><strong>Proof</strong></summary>
 
@@ -61,7 +61,7 @@ $$\lvert \langle x,y \rangle \rvert \leq \sqrt{\langle x,x \rangle \langle y,y \
 
 ---
 
-$\color{Capri}{\textbf{Property 2.3}}$ **Triangle Inequality** $\lVert x+y \rVert \leq \lVert x \rVert + \lVert y \rVert$
+$\color{teal}{\textbf{Property 2.3}}$ **Triangle Inequality** $\lVert x+y \rVert \leq \lVert x \rVert + \lVert y \rVert$
 <details>
 <summary><strong>Proof</strong></summary>
 
@@ -77,7 +77,7 @@ $$\leq \sqrt{\lVert x \rVert^2 + 2\lVert x \rVert \lVert y \rVert + \lVert y \rV
 
 ---
 
-$\color{Capri}{\textbf{Property 2.4}}$ **The inner product induces a norm** $\lVert x \rVert = \sqrt{\langle x,x \rangle}$
+$\color{teal}{\textbf{Property 2.4}}$ **The inner product induces a norm** $\lVert x \rVert = \sqrt{\langle x,x \rangle}$
 <details>
 <summary><strong>Proof</strong></summary>
 
@@ -97,7 +97,7 @@ $$\lVert x+y \rVert \leq \lVert x \rVert + \lVert y \rVert \qquad \square$$
 
 ---
 
-$\color{Capri}{\textbf{Property 2.5}}$ **Parallelogram Identity** $\lVert x+y \rVert^2 + \lVert x-y \rVert^2 = 2(\lVert x \rVert^2 + \lVert y \rVert^2)$
+$\color{teal}{\textbf{Property 2.5}}$ **Parallelogram Identity** $\lVert x+y \rVert^2 + \lVert x-y \rVert^2 = 2(\lVert x \rVert^2 + \lVert y \rVert^2)$
 <details>
 <summary><strong>Proof</strong></summary>
 
@@ -115,7 +115,7 @@ $$\lVert x+y \rVert^2 + \lVert x-y \rVert^2 = 2\lVert x \rVert^2 + 2\lVert y \rV
 
 ---
 
-$\color{Capri}{\textbf{Def 2.6}}$ **Orthogonality**. Two elements $x, y \in X$ are orthogonal, denoted $x \perp y$, if:
+$\color{teal}{\textbf{Def 2.6}}$ **Orthogonality**. Two elements $x, y \in X$ are orthogonal, denoted $x \perp y$, if:
 
 $$\langle x, y \rangle = 0$$
 
