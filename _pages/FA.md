@@ -25,7 +25,7 @@ $\color{yellow}{\star}$ [*Functional Analysis*](https://www.youtube.com/watch?v=
 
 In what follows, we will prove certain properties by considering the field of complexes $\mathbb{C}$; the case for real numbers follows immediately.
 
-$\color{teal}{\textbf{Def 2.1}}$ **Inner product**. Let $X$ be a linear space with field $\mathbb{C}$, a map $\langle \cdot , \cdot \rangle: X \times X \mapsto \mathbb{C}$ is an inner product if:
+$\color{blue}{\textbf{Def 2.1}}$ **Inner product**. Let $X$ be a linear space with field $\mathbb{C}$, a map $\langle \cdot , \cdot \rangle: X \times X \mapsto \mathbb{C}$ is an inner product if:
 
 - **Linearity:** $\langle \alpha x +y,z \rangle=\alpha \langle x,z \rangle+\langle y,z \rangle \quad \forall \alpha \in \mathbb{C}, \forall x,y,z \in X$
 - **Conjugate symmetry:** $\langle x,y \rangle=\overline{\langle y,x \rangle} \quad \forall x,y \in X$
@@ -33,7 +33,7 @@ $\color{teal}{\textbf{Def 2.1}}$ **Inner product**. Let $X$ be a linear space wi
 
 ---
 
-$\color{teal}{\textbf{Property 2.2}}$ **Schwarz Inequality** $\vert \langle x,y \rangle \vert \leq \lVert x \rVert \lVert y \rVert$
+$\color{blue}{\textbf{Property 2.2}}$ **Schwarz Inequality** $\vert \langle x,y \rangle \vert \leq \lVert x \rVert \lVert y \rVert$
 <details>
 <summary><strong>Proof</strong></summary>
 
@@ -61,7 +61,7 @@ $$\lvert \langle x,y \rangle \rvert \leq \sqrt{\langle x,x \rangle \langle y,y \
 
 ---
 
-$\color{teal}{\textbf{Property 2.3}}$ **Triangle Inequality** $\lVert x+y \rVert \leq \lVert x \rVert + \lVert y \rVert$
+$\color{blue}{\textbf{Property 2.3}}$ **Triangle Inequality** $\lVert x+y \rVert \leq \lVert x \rVert + \lVert y \rVert$
 <details>
 <summary><strong>Proof</strong></summary>
 
@@ -77,7 +77,7 @@ $$\leq \sqrt{\lVert x \rVert^2 + 2\lVert x \rVert \lVert y \rVert + \lVert y \rV
 
 ---
 
-$\color{teal}{\textbf{Property 2.4}}$ **The inner product induces a norm** $\lVert x \rVert = \sqrt{\langle x,x \rangle}$
+$\color{blue}{\textbf{Property 2.4}}$ **The inner product induces a norm** $\lVert x \rVert = \sqrt{\langle x,x \rangle}$
 <details>
 <summary><strong>Proof</strong></summary>
 
@@ -97,7 +97,7 @@ $$\lVert x+y \rVert \leq \lVert x \rVert + \lVert y \rVert \qquad \square$$
 
 ---
 
-$\color{teal}{\textbf{Property 2.5}}$ **Parallelogram Identity** $\lVert x+y \rVert^2 + \lVert x-y \rVert^2 = 2(\lVert x \rVert^2 + \lVert y \rVert^2)$
+$\color{blue}{\textbf{Property 2.5}}$ **Parallelogram Identity** $\lVert x+y \rVert^2 + \lVert x-y \rVert^2 = 2(\lVert x \rVert^2 + \lVert y \rVert^2)$
 <details>
 <summary><strong>Proof</strong></summary>
 
@@ -115,7 +115,7 @@ $$\lVert x+y \rVert^2 + \lVert x-y \rVert^2 = 2\lVert x \rVert^2 + 2\lVert y \rV
 
 ---
 
-$\color{teal}{\textbf{Def 2.6}}$ **Orthogonality**. Two elements $x, y \in X$ are orthogonal, denoted $x \perp y$, if:
+$\color{blue}{\textbf{Def 2.6}}$ **Orthogonality**. Two elements $x, y \in X$ are orthogonal, denoted $x \perp y$, if:
 
 $$\langle x, y \rangle = 0$$
 
