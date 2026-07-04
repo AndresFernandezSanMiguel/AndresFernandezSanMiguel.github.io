@@ -61,7 +61,7 @@ $$\lvert \langle x,y \rangle \rvert \leq \sqrt{\langle x,x \rangle \langle y,y \
 
 ---
 
-$\color{blue}{\textbf{Property 2.3}}$ **Triangle Inequality** $\lVert x+y \rVert \leq \lVert x \rVert + \lVert y \rVert$
+$\color{Teal}{\textbf{Property 2.3}}$ **Triangle Inequality** $\lVert x+y \rVert \leq \lVert x \rVert + \lVert y \rVert$
 <details>
 <summary><strong>Proof</strong></summary>
 
@@ -77,7 +77,7 @@ $$\leq \sqrt{\lVert x \rVert^2 + 2\lVert x \rVert \lVert y \rVert + \lVert y \rV
 
 ---
 
-$\color{blue}{\textbf{Property 2.4}}$ **The inner product induces a norm** $\lVert x \rVert = \sqrt{\langle x,x \rangle}$
+$\color{Teal}{\textbf{Property 2.4}}$ **The inner product induces a norm** $\lVert x \rVert = \sqrt{\langle x,x \rangle}$
 <details>
 <summary><strong>Proof</strong></summary>
 
@@ -97,7 +97,7 @@ $$\lVert x+y \rVert \leq \lVert x \rVert + \lVert y \rVert \qquad \square$$
 
 ---
 
-$\color{blue}{\textbf{Property 2.5}}$ **Parallelogram Identity** $\lVert x+y \rVert^2 + \lVert x-y \rVert^2 = 2(\lVert x \rVert^2 + \lVert y \rVert^2)$
+$\color{Teal}{\textbf{Property 2.5}}$ **Parallelogram Identity** $\lVert x+y \rVert^2 + \lVert x-y \rVert^2 = 2(\lVert x \rVert^2 + \lVert y \rVert^2)$
 <details>
 <summary><strong>Proof</strong></summary>
 
@@ -115,7 +115,7 @@ $$\lVert x+y \rVert^2 + \lVert x-y \rVert^2 = 2\lVert x \rVert^2 + 2\lVert y \rV
 
 ---
 
-$\color{blue}{\textbf{Def 2.6}}$ **Orthogonality**. Two elements $x, y \in X$ are orthogonal, denoted $x \perp y$, if:
+$\color{Teal}{\textbf{Def 2.6}}$ **Orthogonality.** Two elements $x, y \in X$ are orthogonal, denoted $x \perp y$, if:
 
 $$\langle x, y \rangle = 0$$
 
