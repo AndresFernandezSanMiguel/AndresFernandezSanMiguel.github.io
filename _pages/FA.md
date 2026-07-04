@@ -33,7 +33,7 @@ $\color{blue}{\textbf{Def 2.1}}$ **Inner product**. Let $X$ be a linear space wi
 
 ---
 
-$\color{blue}{\textbf{Property 2.2}}$ **Schwarz Inequality** $\vert \langle x,y \rangle \vert \leq \lVert x \rVert \lVert y \rVert$
+$\color{Teal}{\textbf{Property 2.2}}$ **Schwarz Inequality** $\vert \langle x,y \rangle \vert \leq \lVert x \rVert \lVert y \rVert$
 <details>
 <summary><strong>Proof</strong></summary>
 
