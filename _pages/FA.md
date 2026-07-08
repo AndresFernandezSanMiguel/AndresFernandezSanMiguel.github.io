@@ -79,15 +79,26 @@ $$\leq \sqrt{\lVert x \rVert^2 + 2\lVert x \rVert \lVert y \rVert + \lVert y \rV
 
 $\color{Teal}{\textbf{Property 2.4}}$ **The inner product induces a norm** $\lVert x \rVert = \sqrt{\langle x,x \rangle}$
 <details>
+<details>
 <summary><strong>Proof</strong></summary>
 
 We need to verify the three axioms of a norm:
 
-1. **Positivity:** By the positivity of the inner product, $\langle x,x \rangle > 0$ for all $x \neq 0$, hence $\lVert x \rVert = \sqrt{\langle x,x \rangle} \geq 0$, with equality if and only if $x = 0$.
+<ol>
+<li><strong>Positivity:</strong> By the positivity of the inner product, $\langle x,x \rangle > 0$ for all $x \neq 0$, hence $\lVert x \rVert = \sqrt{\langle x,x \rangle} \geq 0$, with equality if and only if $x = 0$.</li>
 
-2. **Homogeneity:** For any $\alpha \in \mathbb{C}$: $$\lVert \alpha x \rVert = \sqrt{\langle \alpha x, \alpha x \rangle} = \sqrt{\alpha \bar{\alpha} \langle x,x \rangle} = \lvert \alpha \rvert \lVert x \rVert$$
+<li><strong>Homogeneity:</strong> For any $\alpha \in \mathbb{C}$:
 
-3. **Triangle inequality:** By Property 2.3: $$\lVert x+y \rVert \leq \lVert x \rVert + \lVert y \rVert \qquad \square$$
+$$\lVert \alpha x \rVert = \sqrt{\langle \alpha x, \alpha x \rangle} = \sqrt{\alpha \bar{\alpha} \langle x,x \rangle} = \lvert \alpha \rvert \lVert x \rVert$$
+
+</li>
+
+<li><strong>Triangle inequality:</strong> By Property 2.3:
+
+$$\lVert x+y \rVert \leq \lVert x \rVert + \lVert y \rVert \qquad \square$$
+
+</li>
+</ol>
 
 </details>
 
