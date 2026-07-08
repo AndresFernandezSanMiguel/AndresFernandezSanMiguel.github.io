@@ -79,7 +79,6 @@ $$\leq \sqrt{\lVert x \rVert^2 + 2\lVert x \rVert \lVert y \rVert + \lVert y \rV
 
 $\color{Teal}{\textbf{Property 2.4}}$ **The inner product induces a norm** $\lVert x \rVert = \sqrt{\langle x,x \rangle}$
 <details>
-<details>
 <summary><strong>Proof</strong></summary>
 
 We need to verify the three axioms of a norm:
