@@ -83,11 +83,11 @@ $\color{Teal}{\textbf{Property 2.4}}$ **The inner product induces a norm** $\lVe
 
 We need to verify the three axioms of a norm:
 
-- **1. Positivity:** By the positivity of the inner product, $\langle x,x \rangle > 0$ for all $x \neq 0$, hence $\lVert x \rVert = \sqrt{\langle x,x \rangle} \geq 0$, with equality if and only if $x = 0$.
+1. **Positivity:** By the positivity of the inner product, $\langle x,x \rangle > 0$ for all $x \neq 0$, hence $\lVert x \rVert = \sqrt{\langle x,x \rangle} \geq 0$, with equality if and only if $x = 0$.
 
-- **2. Homogeneity:** For any $\alpha \in \mathbb{C}$: $$\lVert \alpha x \rVert = \sqrt{\langle \alpha x, \alpha x \rangle} = \sqrt{\alpha \bar{\alpha} \langle x,x \rangle} = \lvert \alpha \rvert \lVert x \rVert$$
+2. **Homogeneity:** For any $\alpha \in \mathbb{C}$: $$\lVert \alpha x \rVert = \sqrt{\langle \alpha x, \alpha x \rangle} = \sqrt{\alpha \bar{\alpha} \langle x,x \rangle} = \lvert \alpha \rvert \lVert x \rVert$$
 
-- **3. Triangle inequality:** By Property 2.3: $$\lVert x+y \rVert \leq \lVert x \rVert + \lVert y \rVert \qquad \square$$
+3. **Triangle inequality:** By Property 2.3: $$\lVert x+y \rVert \leq \lVert x \rVert + \lVert y \rVert \qquad \square$$
 
 </details>
 
