@@ -9,7 +9,7 @@ A course on functional analysis with a focus on its application to the Finite El
 ## Contents
 
 1. [References](#references)
-2. [Fundamental Properties](#fundamental-properties)
+2. [Fundamental properties](#fundamental-properties)
 
 ## References
 
@@ -21,7 +21,8 @@ $\color{yellow}{\star}$ [*Applied Functional Analysis*](https://www.taylorfranci
 
 $\color{yellow}{\star}$ [*Functional Analysis*](https://www.youtube.com/watch?v=OonaUALrKUk&list=PLo4jXE-LdDTTIIIRwqK35CbFJieSJEcVR), Claudio Landim Landim
 
-## Fundamental properties
+<details id="fundamental-properties">
+<summary><strong>Fundamental properties</strong></summary>
 
 In what follows, we will prove certain properties by considering the field of complexes $\mathbb{C}$; the case for real numbers follows immediately.
 
@@ -132,3 +133,5 @@ $$\langle x, y \rangle = 0 \quad \forall y \in S$$
 The orthogonal complement of $S$ is defined as:
 
 $$S^\perp = \{ x \in X : x \perp S \}$$
+
+</details>
