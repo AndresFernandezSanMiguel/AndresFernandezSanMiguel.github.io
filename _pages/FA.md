@@ -4,12 +4,13 @@ permalink: /FA/
 author_profile: true
 ---
 
-A course on functional analysis with a focus on its application to the Finite Element Method and Density Functional Theory.
+A course on Functional Analysis with a focus on its application to the Finite Element Method and Density Functional Theory.
 
 ## Contents
 
 1. [References](#references)
 2. [Fundamental properties](#fundamental-properties)
+3. [Hilbert Spaces](#hilbert-spaces)
 
 ## References
 
@@ -120,16 +121,12 @@ $$\lVert x+y \rVert^2 + \lVert x-y \rVert^2 = 2\lVert x \rVert^2 + 2\lVert y \rV
 
 ---
 
-$\color{Teal}{\textbf{Def 2.6}}$ **Orthogonality.** Two elements $x, y \in X$ are orthogonal, denoted $x \perp y$, if:
+<details markdown="1" id="hilbert-spaces">
+<summary><strong>Hilbert Spaces</strong></summary>
 
-$$\langle x, y \rangle = 0$$
-
-More generally, an element $x \in X$ is orthogonal to a set $S \subset X$, denoted $x \perp S$, if:
-
-$$\langle x, y \rangle = 0 \quad \forall y \in S$$
-
-The orthogonal complement of $S$ is defined as:
-
-$$S^\perp = \{ x \in X : x \perp S \}$$
+$\color{Teal}{\textbf{Definition 3.1}}$ **Hilbert space**
 
 </details>
+
+</details>
+
