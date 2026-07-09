@@ -129,7 +129,7 @@ $\color{Teal}{\textbf{Definition 3.1}}$ **Hilbert space**. Linear space $X$ endo
 
 $\color{Teal}{\textbf{Definition 3.2}}$ **Ortogonal space**. Let $Y \subseteq X$ be a linear subset; the orthogonal space is represented as $Y^\perp=\left\lbrace x \in X: \langle x,y \rangle=0 \forall y \in Y \right\rbrace$
 
-$\color{Teal}{\textbf{Properties 3.3}}$ If $X$ is a Hilbert space and $Y \subseteq X$ is a closed subspace, the following properties are verified:
+$\color{Teal}{\textbf{Properties 3.3}}$ If $X$ is a Hilbert space over $\mathbb{C}$ and $Y \subseteq X$ is a closed subspace, the following properties are verified:
 
 1. $Y^\perp$ is also a closed linear subspace.
 2. $X=Y \oplus Y^\perp$, which means that for every $x \in X$ there exist unique elements $y \in Y$ and $y^\perp \in Y^\perp$ such that $x=y+y^\perp$, with $Y \cap Y^\perp=\left\lbrace 0 \right\rbrace$.
@@ -142,10 +142,26 @@ $\color{Teal}{\textbf{Properties 3.3}}$ If $X$ is a Hilbert space and $Y \subset
   $$ \langle x,y \rangle = \lim_{n \to \infty} \langle x_n, y \rangle = 0. $$
 Since $y \in Y$ was arbitrary, we get $x \in Y^\perp$. Hence $Y^\perp$ is closed.
 
-2) Since $Y$ is closed, the Orthogonal Projection Theorem ensures that for each $x \in X$ there exists a unique $y \in Y$ such that $x-y \in Y^\perp$. Let $y^\perp := x-y$. Then $x = y + y^\perp$. To prove uniqueness, suppose $x = y_1 + y_1^\perp = y_2 + y_2^\perp$ with $y_1,y_2 \in Y$ and $y_1^\perp,y_2^\perp \in Y^\perp$. Then $y_1 - y_2 = y_2^\perp - y_1^\perp \in Y \cap Y^\perp$. But if $z \in Y \cap Y^\perp$, then $\langle z, z \rangle = 0$, so $z=0$. Thus $y_1=y_2$ and $y_1^\perp=y_2^\perp$.
+2) First, note that $Y \cap Y^\perp = \{0\}$, since if $z \in Y \cap Y^\perp$, then $\langle z, z \rangle = 0$, so $z=0$.
 
-3) First, $Y \subseteq (Y^\perp)^\perp$ is immediate from the definition. Conversely, let $x \in (Y^\perp)^\perp$. By (2), write $x = y + y^\perp$ with $y \in Y$ and $y^\perp \in Y^\perp$. Since $x \in (Y^\perp)^\perp$ and $y^\perp \in Y^\perp$, we have:
-  $$ 0 = \langle x, y^\perp \rangle = \langle y + y^\perp, y^\perp \rangle = \langle y, y^\perp \rangle + \langle y^\perp, y^\perp \rangle = \|y^\perp\|^2. $$
+Now, let $x \in X$ be fixed. Since $Y$ is closed and convex, there exists $y_0 \in Y$ such that $\|x - y_0\| = \operatorname{dist}(x, Y)$ (the infimum is attained). We claim that $x - y_0 \in Y^\perp$. Define $v := x - y_0$. Take any $z \in Y$ and any real $t \in \mathbb{R}$. Since $Y$ is a linear subspace, $y_0 + tz \in Y$, and by the minimality of $y_0$,
+  $$ \|v\|^2 \le \|v - tz\|^2 = \|v\|^2 - 2t \,\operatorname{Re}\langle v, z \rangle + t^2 \|z\|^2. $$
+Hence, for all $t \in \mathbb{R}$,
+  $$ 0 \le -2t \,\operatorname{Re}\langle v, z \rangle + t^2 \|z\|^2. $$
+If $t > 0$, dividing by $t$ and letting $t \to 0^+$ yields $\operatorname{Re}\langle v, z \rangle \le 0$. If $t < 0$, dividing by $t$ (which reverses the inequality) and letting $t \to 0^-$ yields $\operatorname{Re}\langle v, z \rangle \ge 0$. Therefore $\operatorname{Re}\langle v, z \rangle = 0$.
+
+Since $z \in Y$ was arbitrary and $Y$ is a complex subspace, we also have $i z \in Y$. Applying the previous result to $i z$ gives:
+  $$ \operatorname{Re}\langle v, i z \rangle = 0. $$
+Using the linearity in the first argument of the inner product, $\langle v, i z \rangle = i \langle v, z \rangle$, so:
+  $$ \operatorname{Re}(i \langle v, z \rangle) = 0 \implies -\operatorname{Im}\langle v, z \rangle = 0 \implies \operatorname{Im}\langle v, z \rangle = 0. $$
+Thus both the real and imaginary parts of $\langle v, z \rangle$ are zero, which means $\langle v, z \rangle = 0$ for all $z \in Y$. Hence $v = x - y_0 \in Y^\perp$.
+
+Define $y^\perp := v$. Then $y^\perp \in Y^\perp$ and $x = y_0 + y^\perp$, proving the existence of the decomposition.
+
+To prove uniqueness, suppose $x = y_1 + y_1^\perp = y_2 + y_2^\perp$ with $y_1, y_2 \in Y$ and $y_1^\perp, y_2^\perp \in Y^\perp$. Then $y_1 - y_2 = y_2^\perp - y_1^\perp$. The left-hand side belongs to $Y$, while the right-hand side belongs to $Y^\perp$. Hence both sides lie in $Y \cap Y^\perp = \{0\}$. Thus $y_1 = y_2$ and $y_1^\perp = y_2^\perp$.
+
+3) First, $Y \subseteq (Y^\perp)^\perp$ is immediate from the definition. Conversely, let $x \in (Y^\perp)^\perp$. By (2), write uniquely $x = y + y^\perp$ with $y \in Y$ and $y^\perp \in Y^\perp$. Since $x \in (Y^\perp)^\perp$ and $y^\perp \in Y^\perp$, we have:
+  $$ 0 = \langle x, y^\perp \rangle = \langle y + y^\perp, y^\perp \rangle = \langle y, y^\perp \rangle + \langle y^\perp, y^\perp \rangle = 0 + \|y^\perp\|^2. $$
 Hence $y^\perp = 0$, so $x = y \in Y$. Therefore $(Y^\perp)^\perp \subseteq Y$, and we conclude $(Y^\perp)^\perp = Y$.
 
 </details>
