@@ -129,6 +129,11 @@ $\color{Teal}{\textbf{Definition 3.1}}$ **Hilbert space**. Linear space $X$ endo
 
 $\color{Teal}{\textbf{Definition 3.2}}$ **Ortogonal space**. Let $Y \subseteq X$ be a linear subset; the orthogonal space is represented as $Y^\perp=\left\lbrace x \in X: \langle x,y \rangle=0 \forall y \in Y \right\rbrace$
 
+$\color{Teal}{\textbf{Properties 3.3}}$ If $X$ is a closed Hilbert  the following properties are verified:
+
+1. $Y^\perp$ is closed.
+2. $X=Y \oplus Y^\perp$ wich means that $\forall x \in X \exist y \in Y$ and $y^perp \in y^\perp$ such that $x=y+y^\perp$ with $Y \cap Y^\perp=\left\lbrace 0 \right\rbrace$
+
 </details>
 
 
