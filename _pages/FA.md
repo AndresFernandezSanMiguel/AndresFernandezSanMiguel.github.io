@@ -21,7 +21,7 @@ $\color{yellow}{\star}$ [*Applied Functional Analysis*](https://www.taylorfranci
 
 $\color{yellow}{\star}$ [*Functional Analysis*](https://www.youtube.com/watch?v=OonaUALrKUk&list=PLo4jXE-LdDTTIIIRwqK35CbFJieSJEcVR), Claudio Landim Landim
 
-<details id="fundamental-properties">
+<details markdown="1" id="fundamental-properties">
 <summary><strong>Fundamental properties</strong></summary>
 
 In what follows, we will prove certain properties by considering the field of complexes $\mathbb{C}$; the case for real numbers follows immediately.
@@ -35,7 +35,8 @@ $\color{Teal}{\textbf{Def 2.1}}$ **Inner product**. Let $X$ be a linear space wi
 ---
 
 $\color{Teal}{\textbf{Property 2.2}}$ **Schwarz Inequality** $\vert \langle x,y \rangle \vert \leq \lVert x \rVert \lVert y \rVert$
-<details>
+
+<details markdown="1">
 <summary><strong>Proof</strong></summary>
 
 For any $t \in \mathbb{R}$ and $\hat{x} \in X$, positivity of the inner product gives:
@@ -63,7 +64,8 @@ $$\lvert \langle x,y \rangle \rvert \leq \sqrt{\langle x,x \rangle \langle y,y \
 ---
 
 $\color{Teal}{\textbf{Property 2.3}}$ **Triangle Inequality** $\lVert x+y \rVert \leq \lVert x \rVert + \lVert y \rVert$
-<details>
+
+<details markdown="1">
 <summary><strong>Proof</strong></summary>
 
 We start from:
@@ -79,33 +81,29 @@ $$\leq \sqrt{\lVert x \rVert^2 + 2\lVert x \rVert \lVert y \rVert + \lVert y \rV
 ---
 
 $\color{Teal}{\textbf{Property 2.4}}$ **The inner product induces a norm** $\lVert x \rVert = \sqrt{\langle x,x \rangle}$
-<details>
+
+<details markdown="1">
 <summary><strong>Proof</strong></summary>
 
 We need to verify the three axioms of a norm:
 
-<ol>
-<li><strong>Positivity:</strong> By the positivity of the inner product, $\langle x,x \rangle > 0$ for all $x \neq 0$, hence $\lVert x \rVert = \sqrt{\langle x,x \rangle} \geq 0$, with equality if and only if $x = 0$.</li>
+1. **Positivity:** By the positivity of the inner product, $\langle x,x \rangle > 0$ for all $x \neq 0$, hence $\lVert x \rVert = \sqrt{\langle x,x \rangle} \geq 0$, with equality if and only if $x = 0$.
 
-<li><strong>Homogeneity:</strong> For any $\alpha \in \mathbb{C}$:
+2. **Homogeneity:** For any $\alpha \in \mathbb{C}$:
 
 $$\lVert \alpha x \rVert = \sqrt{\langle \alpha x, \alpha x \rangle} = \sqrt{\alpha \bar{\alpha} \langle x,x \rangle} = \lvert \alpha \rvert \lVert x \rVert$$
 
-</li>
-
-<li><strong>Triangle inequality:</strong> By Property 2.3:
+3. **Triangle inequality:** By Property 2.3:
 
 $$\lVert x+y \rVert \leq \lVert x \rVert + \lVert y \rVert \qquad \square$$
-
-</li>
-</ol>
 
 </details>
 
 ---
 
 $\color{Teal}{\textbf{Property 2.5}}$ **Parallelogram Identity** $\lVert x+y \rVert^2 + \lVert x-y \rVert^2 = 2(\lVert x \rVert^2 + \lVert y \rVert^2)$
-<details>
+
+<details markdown="1">
 <summary><strong>Proof</strong></summary>
 
 Expanding both terms using the inner product:
