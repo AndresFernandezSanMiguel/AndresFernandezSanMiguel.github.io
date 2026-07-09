@@ -129,12 +129,26 @@ $\color{Teal}{\textbf{Definition 3.1}}$ **Hilbert space**. Linear space $X$ endo
 
 $\color{Teal}{\textbf{Definition 3.2}}$ **Ortogonal space**. Let $Y \subseteq X$ be a linear subset; the orthogonal space is represented as $Y^\perp=\left\lbrace x \in X: \langle x,y \rangle=0 \forall y \in Y \right\rbrace$
 
-$\color{Teal}{\textbf{Properties 3.3}}$ If $X$ is a closed Hilbert  the following properties are verified:
+$\color{Teal}{\textbf{Properties 3.3}}$ If $X$ is a Hilbert space and $Y \subseteq X$ is a closed subspace, the following properties are verified:
 
-1. $Y^\perp$ is closed.
-2. $X=Y \oplus Y^\perp$ wich means that $\forall x \in X \exists y \in Y$ and $y^perp \in y^\perp$ such that $x=y+y^\perp$ with $Y \cap Y^\perp=\left\lbrace 0 \right\rbrace$
-3. $\left( Y^\perp \right)^\perp=Y$
+1. $Y^\perp$ is also a closed linear subspace.
+2. $X=Y \oplus Y^\perp$, which means that for every $x \in X$ there exist unique elements $y \in Y$ and $y^\perp \in Y^\perp$ such that $x=y+y^\perp$, with $Y \cap Y^\perp=\left\lbrace 0 \right\rbrace$.
+3. $\left( Y^\perp \right)^\perp=Y$.
 
+<details markdown="1">
+<summary><strong>Proof</strong></summary>
+
+1) To show that $Y^\perp$ is closed, consider a sequence $(x_n) \subset Y^\perp$ that converges to $x \in X$. For any fixed $y \in Y$, we have $\langle x_n, y \rangle = 0$ for all $n$. By continuity of the inner product, it follows that:
+  $$ \langle x,y \rangle = \lim_{n \to \infty} \langle x_n, y \rangle = 0. $$
+Since $y \in Y$ was arbitrary, we get $x \in Y^\perp$. Hence $Y^\perp$ is closed.
+
+2) Since $Y$ is closed, the Orthogonal Projection Theorem ensures that for each $x \in X$ there exists a unique $y \in Y$ such that $x-y \in Y^\perp$. Let $y^\perp := x-y$. Then $x = y + y^\perp$. To prove uniqueness, suppose $x = y_1 + y_1^\perp = y_2 + y_2^\perp$ with $y_1,y_2 \in Y$ and $y_1^\perp,y_2^\perp \in Y^\perp$. Then $y_1 - y_2 = y_2^\perp - y_1^\perp \in Y \cap Y^\perp$. But if $z \in Y \cap Y^\perp$, then $\langle z, z \rangle = 0$, so $z=0$. Thus $y_1=y_2$ and $y_1^\perp=y_2^\perp$.
+
+3) First, $Y \subseteq (Y^\perp)^\perp$ is immediate from the definition. Conversely, let $x \in (Y^\perp)^\perp$. By (2), write $x = y + y^\perp$ with $y \in Y$ and $y^\perp \in Y^\perp$. Since $x \in (Y^\perp)^\perp$ and $y^\perp \in Y^\perp$, we have:
+  $$ 0 = \langle x, y^\perp \rangle = \langle y + y^\perp, y^\perp \rangle = \langle y, y^\perp \rangle + \langle y^\perp, y^\perp \rangle = \|y^\perp\|^2. $$
+Hence $y^\perp = 0$, so $x = y \in Y$. Therefore $(Y^\perp)^\perp \subseteq Y$, and we conclude $(Y^\perp)^\perp = Y$.
+
+</details>
 </details>
 
 
