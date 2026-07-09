@@ -119,14 +119,15 @@ $$\lVert x+y \rVert^2 + \lVert x-y \rVert^2 = 2\lVert x \rVert^2 + 2\lVert y \rV
 
 </details>
 
+</details>
 ---
 
 <details markdown="1" id="hilbert-spaces">
 <summary><strong>Hilbert Spaces</strong></summary>
 
-$\color{Teal}{\textbf{Definition 3.1}}$ **Hilbert space**
+$\color{Teal}{\textbf{Definition 3.1}}$ **Hilbert space** Linear space endowed with an inner product $\langle , \rangle \mapsto \lVert \rVert$ wich is complete on its norm.
 
 </details>
 
-</details>
+
 
