@@ -102,7 +102,7 @@ $$\lVert x+y \rVert \leq \lVert x \rVert + \lVert y \rVert \qquad \square$$
 
 ---
 
-$\color{Teal}{\textbf{Property 2.5}}$ **Parallelogram Identity** $\lVert x+y \rVert^2 + \lVert x-y \rVert^2 = 2(\lVert x \rVert^2 + \lVert y \rVert^2)$
+$\color{Teal}{\textbf{Property 2.5}}$ **Parallelogram Identity**. $\lVert x+y \rVert^2 + \lVert x-y \rVert^2 = 2(\lVert x \rVert^2 + \lVert y \rVert^2)$
 
 <details markdown="1">
 <summary><strong>Proof</strong></summary>
@@ -125,7 +125,9 @@ $$\lVert x+y \rVert^2 + \lVert x-y \rVert^2 = 2\lVert x \rVert^2 + 2\lVert y \rV
 <details markdown="1" id="hilbert-spaces">
 <summary><strong>Hilbert Spaces</strong></summary>
 
-$\color{Teal}{\textbf{Definition 3.1}}$ **Hilbert space** Linear space endowed with an inner product $\langle , \rangle \mapsto \lVert \rVert$ wich is complete on its norm.
+$\color{Teal}{\textbf{Definition 3.1}}$ **Hilbert space**. Linear space $X$ endowed with an inner product $\langle , \rangle \mapsto \lVert \rVert$ wich is complete on its norm.
+
+$\color{Teal}{\textbf{Definition 3.2}}$ **Ortogonal space**. Let $Y \subseteq X$ be a linear subset; the orthogonal space is represented as $Y^\perp=\left\lbrace x \in X: \langle x,y \rangle=0 \forall y \in Y \right\rbrace$
 
 </details>
 
