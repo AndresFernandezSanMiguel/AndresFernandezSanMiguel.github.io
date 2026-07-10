@@ -27,7 +27,7 @@ where $$\mathbf{K}$$ refers to the stiffness matrix or Hessian of the system, $$
  
 **Tutorial 1 $$\Rightarrow$$ Theoretical background**
 
-We present the theoretical basis for using our SAOAS code for the linear static and vibrational analysis of molecular structures.
+We present the theoretical basis for using our [SAOAS](https://github.com/AndresFernandezSanMiguel/MEM-Linear) code for the linear static and vibrational analysis of molecular structures.
 
 {% include video.html id="w4Grmfd7c9c" provider="youtube" %}
 
@@ -38,6 +38,8 @@ If you are a fan of Beamer presentations $$\Rightarrow$$ [Download Presentation 
 <img src="/images/logo_saoas_trans.png" width="300">
 
 - **Source code** $\Rightarrow$ [Download SAOAS](https://github.com/AndresFernandezSanMiguel/MEM-Linear)
+- **Eigen and Spectra** $\Rightarrow$ [Download](https://spectralib.org/download)
+- **VMD** $\Rightarrow$ [Download](https://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=VMD)
 
 
 
