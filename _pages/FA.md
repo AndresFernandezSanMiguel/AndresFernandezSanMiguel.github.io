@@ -12,40 +12,41 @@ A course on Functional Analysis with a focus on its application to the Finite El
 2. [Fundamental properties](#fundamental-properties)
 3. [Hilbert Spaces](#hilbert-spaces)
 4. [Riesz Representation and Lax‑Milgram Theorems](#riesz-lax-milgram)
+5. [Application: Laplace Membrane Equation with Homogeneous BCs](#application-laplace)
 
 ## References
 
 As references, I recommend:
 
-$\color{yellow}{\star}$ [*Analysis*](https://bookstore.ams.org/view?ProductCode=GSM/14.R), EH Lieb & M Loss
+$$\color{yellow}{\star}$$ [*Analysis*](https://bookstore.ams.org/view?ProductCode=GSM/14.R), EH Lieb & M Loss
 
-$\color{yellow}{\star}$ [*Applied Functional Analysis*](https://www.taylorfrancis.com/books/mono/10.1201/9781315119489/applied-functional-analysis-tinsley-oden-leszek-demkowicz), JT Oden & L Demkowicz
+$$\color{yellow}{\star}$$ [*Applied Functional Analysis*](https://www.taylorfrancis.com/books/mono/10.1201/9781315119489/applied-functional-analysis-tinsley-oden-leszek-demkowicz), JT Oden & L Demkowicz
 
-$\color{yellow}{\star}$ [*Functional Analysis*](https://www.youtube.com/watch?v=OonaUALrKUk&list=PLo4jXE-LdDTTIIIRwqK35CbFJieSJEcVR), Claudio Landim Landim
+$$\color{yellow}{\star}$$ [*Functional Analysis*](https://www.youtube.com/watch?v=OonaUALrKUk&list=PLo4jXE-LdDTTIIIRwqK35CbFJieSJEcVR), Claudio Landim Landim
 
 <details markdown="1" id="fundamental-properties">
 <summary><strong>Fundamental properties</strong></summary>
 
-In what follows, we will prove certain properties by considering the field of complexes $\mathbb{C}$; the case for real numbers follows immediately.
+In what follows, we will prove certain properties by considering the field of complexes $$\mathbb{C}$$; the case for real numbers follows immediately.
 
-$\color{Teal}{\textbf{Def 2.1}}$ **Inner product**. Let $X$ be a linear space with field $\mathbb{C}$, a map $\langle \cdot , \cdot \rangle: X \times X \mapsto \mathbb{C}$ is an inner product if:
+$$\color{Teal}{\textbf{Def 2.1}}$$ **Inner product**. Let $$X$$ be a linear space with field $$\mathbb{C}$$, a map $$\langle \cdot , \cdot \rangle: X \times X \mapsto \mathbb{C}$$ is an inner product if:
 
-- **Linearity:** $\langle \alpha x +y,z \rangle=\alpha \langle x,z \rangle+\langle y,z \rangle \quad \forall \alpha \in \mathbb{C}, \forall x,y,z \in X$
-- **Conjugate symmetry:** $\langle x,y \rangle=\overline{\langle y,x \rangle} \quad \forall x,y \in X$
-- **Positivity:** $\langle x,x \rangle>0 \quad \forall x \neq 0$
+- **Linearity:** $$\langle \alpha x +y,z \rangle=\alpha \langle x,z \rangle+\langle y,z \rangle \quad \forall \alpha \in \mathbb{C}, \forall x,y,z \in X$$
+- **Conjugate symmetry:** $$\langle x,y \rangle=\overline{\langle y,x \rangle} \quad \forall x,y \in X$$
+- **Positivity:** $$\langle x,x \rangle>0 \quad \forall x \neq 0$$
 
 ---
 
-$\color{Teal}{\textbf{Property 2.2}}$ **Schwarz Inequality** $\vert \langle x,y \rangle \vert \leq \lVert x \rVert \lVert y \rVert$
+$$\color{Teal}{\textbf{Property 2.2}}$$ **Schwarz Inequality** $$\vert \langle x,y \rangle \vert \leq \lVert x \rVert \lVert y \rVert$$
 
 <details markdown="1">
 <summary><strong>Proof</strong></summary>
 
-For any $t \in \mathbb{R}$ and $\hat{x} \in X$, positivity of the inner product gives:
+For any $$t \in \mathbb{R}$$ and $$\hat{x} \in X$$, positivity of the inner product gives:
 
 $$\langle \hat{x}+ty, \hat{x}+ty \rangle = t^2 \langle y,y \rangle + 2t\,\text{Re}\langle \hat{x},y \rangle + \langle \hat{x},\hat{x} \rangle \geq 0$$
 
-This is a quadratic in $t$ that is non-negative for all $t \in \mathbb{R}$, so its discriminant must satisfy:
+This is a quadratic in $$t$$ that is non-negative for all $$t \in \mathbb{R}$$, so its discriminant must satisfy:
 
 $$\left(\text{Re}\langle \hat{x},y \rangle\right)^2 \leq \langle \hat{x},\hat{x} \rangle \langle y,y \rangle$$
 
@@ -53,11 +54,11 @@ hence:
 
 $$\text{Re}\langle \hat{x},y \rangle \leq \sqrt{\langle \hat{x},\hat{x} \rangle \langle y,y \rangle}$$
 
-Since this holds for any $\hat{x} \in X$, we take $\hat{x} = e^{-i\theta}x$ where $\theta = \arg\langle x,y \rangle$. Then:
+Since this holds for any $$\hat{x} \in X$$, we take $$\hat{x} = e^{-i\theta}x$$ where $$\theta = \arg\langle x,y \rangle$$. Then:
 
 $$\text{Re}\left[e^{-i\theta}\langle x,y \rangle\right] = \text{Re}\left[\lvert \langle x,y \rangle \rvert e^{i\theta} e^{-i\theta}\right] = \lvert \langle x,y \rangle \rvert$$
 
-and $\langle \hat{x},\hat{x} \rangle = \langle e^{-i\theta}x, e^{-i\theta}x \rangle = \langle x,x \rangle$, so substituting:
+and $$\langle \hat{x},\hat{x} \rangle = \langle e^{-i\theta}x, e^{-i\theta}x \rangle = \langle x,x \rangle$$, so substituting:
 
 $$\lvert \langle x,y \rangle \rvert \leq \sqrt{\langle x,x \rangle \langle y,y \rangle} = \lVert x \rVert \lVert y \rVert \qquad \square$$
 
@@ -65,7 +66,7 @@ $$\lvert \langle x,y \rangle \rvert \leq \sqrt{\langle x,x \rangle \langle y,y \
 
 ---
 
-$\color{Teal}{\textbf{Property 2.3}}$ **Triangle Inequality** $\lVert x+y \rVert \leq \lVert x \rVert + \lVert y \rVert$
+$$\color{Teal}{\textbf{Property 2.3}}$$ **Triangle Inequality** $$\lVert x+y \rVert \leq \lVert x \rVert + \lVert y \rVert$$
 
 <details markdown="1">
 <summary><strong>Proof</strong></summary>
@@ -74,7 +75,7 @@ We start from:
 
 $$\lVert x+y \rVert = \sqrt{\lVert x \rVert^2 + 2\,\text{Re}\langle x,y \rangle + \lVert y \rVert^2} \leq \sqrt{\lVert x \rVert^2 + 2\lvert \langle x,y \rangle \rvert + \lVert y \rVert^2}$$
 
-Applying the Schwarz Inequality $\lvert \langle x,y \rangle \rvert \leq \lVert x \rVert \lVert y \rVert$:
+Applying the Schwarz Inequality $$\lvert \langle x,y \rangle \rvert \leq \lVert x \rVert \lVert y \rVert$$:
 
 $$\leq \sqrt{\lVert x \rVert^2 + 2\lVert x \rVert \lVert y \rVert + \lVert y \rVert^2} = \sqrt{(\lVert x \rVert + \lVert y \rVert)^2} = \lVert x \rVert + \lVert y \rVert \qquad \square$$
 
@@ -82,16 +83,16 @@ $$\leq \sqrt{\lVert x \rVert^2 + 2\lVert x \rVert \lVert y \rVert + \lVert y \rV
 
 ---
 
-$\color{Teal}{\textbf{Property 2.4}}$ **The inner product induces a norm** $\lVert x \rVert = \sqrt{\langle x,x \rangle}$
+$$\color{Teal}{\textbf{Property 2.4}}$$ **The inner product induces a norm** $$\lVert x \rVert = \sqrt{\langle x,x \rangle}$$
 
 <details markdown="1">
 <summary><strong>Proof</strong></summary>
 
 We need to verify the three axioms of a norm:
 
-1. **Positivity:** By the positivity of the inner product, $\langle x,x \rangle > 0$ for all $x \neq 0$, hence $\lVert x \rVert = \sqrt{\langle x,x \rangle} \geq 0$, with equality if and only if $x = 0$.
+1. **Positivity:** By the positivity of the inner product, $$\langle x,x \rangle > 0$$ for all $$x \neq 0$$, hence $$\lVert x \rVert = \sqrt{\langle x,x \rangle} \geq 0$$, with equality if and only if $$x = 0$$.
 
-2. **Homogeneity:** For any $\alpha \in \mathbb{C}$:
+2. **Homogeneity:** For any $$\alpha \in \mathbb{C}$$:
 
 $$\lVert \alpha x \rVert = \sqrt{\langle \alpha x, \alpha x \rangle} = \sqrt{\alpha \bar{\alpha} \langle x,x \rangle} = \lvert \alpha \rvert \lVert x \rVert$$
 
@@ -103,7 +104,7 @@ $$\lVert x+y \rVert \leq \lVert x \rVert + \lVert y \rVert \qquad \square$$
 
 ---
 
-$\color{Teal}{\textbf{Property 2.5}}$ **Parallelogram Identity**. $\lVert x+y \rVert^2 + \lVert x-y \rVert^2 = 2(\lVert x \rVert^2 + \lVert y \rVert^2)$
+$$\color{Teal}{\textbf{Property 2.5}}$$ **Parallelogram Identity**. $$\lVert x+y \rVert^2 + \lVert x-y \rVert^2 = 2(\lVert x \rVert^2 + \lVert y \rVert^2)$$
 
 <details markdown="1">
 <summary><strong>Proof</strong></summary>
@@ -125,68 +126,68 @@ $$\lVert x+y \rVert^2 + \lVert x-y \rVert^2 = 2\lVert x \rVert^2 + 2\lVert y \rV
 <details markdown="1" id="hilbert-spaces">
 <summary><strong>Hilbert Spaces</strong></summary>
 
-$\color{Teal}{\textbf{Definition 3.1}}$ **Hilbert space**. Linear space $X$ endowed with an inner product $\langle , \rangle \mapsto \lVert \rVert$ wich is complete on its norm.
+$$\color{Teal}{\textbf{Definition 3.1}}$$ **Hilbert space**. Linear space $$X$$ endowed with an inner product $$\langle , \rangle \mapsto \lVert \rVert$$ wich is complete on its norm.
 
-$\color{Teal}{\textbf{Definition 3.2}}$ **Ortogonal space**. Let $Y \subseteq X$ be a linear subset; the orthogonal space is represented as $Y^\perp=\left\lbrace x \in X: \langle x,y \rangle=0 \forall y \in Y \right\rbrace$
+$$\color{Teal}{\textbf{Definition 3.2}}$$ **Ortogonal space**. Let $$Y \subseteq X$$ be a linear subset; the orthogonal space is represented as $$Y^\perp=\left\lbrace x \in X: \langle x,y \rangle=0 \forall y \in Y \right\rbrace$$
 
-$\color{Teal}{\textbf{Theorem (Best Approximation in Hilbert spaces)}}$ Let $X$ be a Hilbert space over $\mathbb{C}$ and let $K \subset X$ be a nonempty, closed, and convex subset. Then for every $x \in X$ there exists a unique point $z \in K$ such that
+$$\color{Teal}{\textbf{Theorem (Best Approximation in Hilbert spaces)}}$$ Let $$X$$ be a Hilbert space over $$\mathbb{C}$$ and let $$K \subset X$$ be a nonempty, closed, and convex subset. Then for every $$x \in X$$ there exists a unique point $$z \in K$$ such that
 $$ \|x - z\| = \operatorname{dist}(x, K) := \inf_{y \in K} \|x - y\|. $$
 
 <details markdown="1">
 <summary><strong>Proof</strong></summary>
 
-Let $d := \operatorname{dist}(x, K)$. By definition of infimum, there exists a sequence $(z_n) \subset K$ such that $\|x - z_n\| \to d$. We show that $(z_n)$ is Cauchy.
+Let $$d := \operatorname{dist}(x, K)$$. By definition of infimum, there exists a sequence $$(z_n) \subset K$$ such that $$\|x - z_n\| \to d$$. We show that $$(z_n)$$ is Cauchy.
 
 Using the parallelogram identity,
 $$ \|z_n - z_m\|^2 = 2\|z_n - x\|^2 + 2\|z_m - x\|^2 - 4\left\| \frac{z_n + z_m}{2} - x \right\|^2. $$
-Since $K$ is convex, $\frac{z_n + z_m}{2} \in K$, so $\left\| \frac{z_n + z_m}{2} - x \right\| \ge d$. Hence
+Since $$K$$ is convex, $$\frac{z_n + z_m}{2} \in K$$, so $$\left\| \frac{z_n + z_m}{2} - x \right\| \ge d$$. Hence
 $$ \|z_n - z_m\|^2 \le 2\|z_n - x\|^2 + 2\|z_m - x\|^2 - 4d^2. $$
-As $n,m \to \infty$, the right-hand side tends to $2d^2 + 2d^2 - 4d^2 = 0$. Thus $(z_n)$ is Cauchy. Since $X$ is complete and $K$ is closed, $(z_n)$ converges to some $z \in K$. By continuity of the norm, $\|x - z\| = \lim_{n \to \infty} \|x - z_n\| = d$.
+As $$n,m \to \infty$$, the right-hand side tends to $$2d^2 + 2d^2 - 4d^2 = 0$$. Thus $$(z_n)$$ is Cauchy. Since $$X$$ is complete and $$K$$ is closed, $$(z_n)$$ converges to some $$z \in K$$. By continuity of the norm, $$\|x - z\| = \lim_{n \to \infty} \|x - z_n\| = d$$.
 
-To prove uniqueness, suppose $z_1, z_2 \in K$ both satisfy $\|x - z_1\| = \|x - z_2\| = d$. By convexity, $\frac{z_1 + z_2}{2} \in K$, so
+To prove uniqueness, suppose $$z_1, z_2 \in K$$ both satisfy $$\|x - z_1\| = \|x - z_2\| = d$$. By convexity, $$\frac{z_1 + z_2}{2} \in K$$, so
 $$ d \le \left\| x - \frac{z_1 + z_2}{2} \right\| \le \frac{1}{2}\|x - z_1\| + \frac{1}{2}\|x - z_2\| = d. $$
-Thus equality holds in the triangle inequality, which implies $z_1 = z_2$ (or, more rigorously, by the parallelogram identity:
+Thus equality holds in the triangle inequality, which implies $$z_1 = z_2$$ (or, more rigorously, by the parallelogram identity:
 $$ \|z_1 - z_2\|^2 = 2\|z_1 - x\|^2 + 2\|z_2 - x\|^2 - 4\left\| x - \frac{z_1 + z_2}{2} \right\|^2 \le 2d^2 + 2d^2 - 4d^2 = 0). $$
-Hence $z_1 = z_2$.
+Hence $$z_1 = z_2$$.
 
 </details>
 
 ---
 
-$\color{Teal}{\textbf{Properties 3.3}}$ If $X$ is a Hilbert space over $\mathbb{C}$ and $Y \subseteq X$ is a closed subspace, the following properties are verified:
+$$\color{Teal}{\textbf{Properties 3.3}}$$ If $$X$$ is a Hilbert space over $$\mathbb{C}$$ and $$Y \subseteq X$$ is a closed subspace, the following properties are verified:
 
-1. $Y^\perp$ is also a closed linear subspace.
-2. $X=Y \oplus Y^\perp$, which means that for every $x \in X$ there exist unique elements $y \in Y$ and $y^\perp \in Y^\perp$ such that $x=y+y^\perp$, with $Y \cap Y^\perp=\left\lbrace 0 \right\rbrace$.
-3. $\left( Y^\perp \right)^\perp=Y$.
+1. $$Y^\perp$$ is also a closed linear subspace.
+2. $$X=Y \oplus Y^\perp$$, which means that for every $$x \in X$$ there exist unique elements $$y \in Y$$ and $$y^\perp \in Y^\perp$$ such that $$x=y+y^\perp$$, with $$Y \cap Y^\perp=\left\lbrace 0 \right\rbrace$$.
+3. $$\left( Y^\perp \right)^\perp=Y$$.
 
 <details markdown="1">
 <summary><strong>Proof</strong></summary>
 
-1) To show that $Y^\perp$ is closed, consider a sequence $(x_n) \subset Y^\perp$ that converges to $x \in X$. For any fixed $y \in Y$, we have $\langle x_n, y \rangle = 0$ for all $n$. By continuity of the inner product, it follows that:
+1) To show that $$Y^\perp$$ is closed, consider a sequence $$(x_n) \subset Y^\perp$$ that converges to $$x \in X$$. For any fixed $$y \in Y$$, we have $$\langle x_n, y \rangle = 0$$ for all $$n$$. By continuity of the inner product, it follows that:
   $$ \langle x,y \rangle = \lim_{n \to \infty} \langle x_n, y \rangle = 0. $$
-Since $y \in Y$ was arbitrary, we get $x \in Y^\perp$. Hence $Y^\perp$ is closed.
+Since $$y \in Y$$ was arbitrary, we get $$x \in Y^\perp$$. Hence $$Y^\perp$$ is closed.
 
-2) First, note that $Y \cap Y^\perp = \{0\}$, since if $z \in Y \cap Y^\perp$, then $\langle z, z \rangle = 0$, so $z=0$.
+2) First, note that $$Y \cap Y^\perp = \{0\}$$, since if $$z \in Y \cap Y^\perp$$, then $$\langle z, z \rangle = 0$$, so $$z=0$$.
 
-Now, let $x \in X$ be fixed. Since $Y$ is a closed subspace (hence convex and nonempty), the Best Approximation Theorem ensures the existence of a unique $y_0 \in Y$ such that $\|x - y_0\| = \operatorname{dist}(x, Y)$. We claim that $x - y_0 \in Y^\perp$. Define $v := x - y_0$. Take any $z \in Y$ and any real $t \in \mathbb{R}$. Since $Y$ is a linear subspace, $y_0 + tz \in Y$, and by the minimality of $y_0$,
+Now, let $$x \in X$$ be fixed. Since $$Y$$ is a closed subspace (hence convex and nonempty), the Best Approximation Theorem ensures the existence of a unique $$y_0 \in Y$$ such that $$\|x - y_0\| = \operatorname{dist}(x, Y)$$. We claim that $$x - y_0 \in Y^\perp$$. Define $$v := x - y_0$$. Take any $$z \in Y$$ and any real $$t \in \mathbb{R}$$. Since $$Y$$ is a linear subspace, $$y_0 + tz \in Y$$, and by the minimality of $$y_0$$,
   $$ \|v\|^2 \le \|v - tz\|^2 = \|v\|^2 - 2t \,\operatorname{Re}\langle v, z \rangle + t^2 \|z\|^2. $$
-Hence, for all $t \in \mathbb{R}$,
+Hence, for all $$t \in \mathbb{R}$$,
   $$ 0 \le -2t \,\operatorname{Re}\langle v, z \rangle + t^2 \|z\|^2. $$
-If $t > 0$, dividing by $t$ and letting $t \to 0^+$ yields $\operatorname{Re}\langle v, z \rangle \le 0$. If $t < 0$, dividing by $t$ (which reverses the inequality) and letting $t \to 0^-$ yields $\operatorname{Re}\langle v, z \rangle \ge 0$. Therefore $\operatorname{Re}\langle v, z \rangle = 0$.
+If $$t > 0$$, dividing by $$t$$ and letting $$t \to 0^+$$ yields $$\operatorname{Re}\langle v, z \rangle \le 0$$. If $$t < 0$$, dividing by $$t$$ (which reverses the inequality) and letting $$t \to 0^-$$ yields $$\operatorname{Re}\langle v, z \rangle \ge 0$$. Therefore $$\operatorname{Re}\langle v, z \rangle = 0$$.
 
-Since $z \in Y$ was arbitrary and $Y$ is a complex subspace, we also have $i z \in Y$. Applying the previous result to $i z$ gives:
+Since $$z \in Y$$ was arbitrary and $$Y$$ is a complex subspace, we also have $$i z \in Y$$. Applying the previous result to $$i z$$ gives:
   $$ \operatorname{Re}\langle v, i z \rangle = 0. $$
-Using the linearity in the first argument of the inner product, $\langle v, i z \rangle = i \langle v, z \rangle$, so:
+Using the linearity in the first argument of the inner product, $$\langle v, i z \rangle = i \langle v, z \rangle$$, so:
   $$ \operatorname{Re}(i \langle v, z \rangle) = 0 \implies -\operatorname{Im}\langle v, z \rangle = 0 \implies \operatorname{Im}\langle v, z \rangle = 0. $$
-Thus both the real and imaginary parts of $\langle v, z \rangle$ are zero, which means $\langle v, z \rangle = 0$ for all $z \in Y$. Hence $v = x - y_0 \in Y^\perp$.
+Thus both the real and imaginary parts of $$\langle v, z \rangle$$ are zero, which means $$\langle v, z \rangle = 0$$ for all $$z \in Y$$. Hence $$v = x - y_0 \in Y^\perp$$.
 
-Define $y^\perp := v$. Then $y^\perp \in Y^\perp$ and $x = y_0 + y^\perp$, proving the existence of the decomposition.
+Define $$y^\perp := v$$. Then $$y^\perp \in Y^\perp$$ and $$x = y_0 + y^\perp$$, proving the existence of the decomposition.
 
-To prove uniqueness, suppose $x = y_1 + y_1^\perp = y_2 + y_2^\perp$ with $y_1, y_2 \in Y$ and $y_1^\perp, y_2^\perp \in Y^\perp$. Then $y_1 - y_2 = y_2^\perp - y_1^\perp$. The left-hand side belongs to $Y$, while the right-hand side belongs to $Y^\perp$. Hence both sides lie in $Y \cap Y^\perp = \{0\}$. Thus $y_1 = y_2$ and $y_1^\perp = y_2^\perp$.
+To prove uniqueness, suppose $$x = y_1 + y_1^\perp = y_2 + y_2^\perp$$ with $$y_1, y_2 \in Y$$ and $$y_1^\perp, y_2^\perp \in Y^\perp$$. Then $$y_1 - y_2 = y_2^\perp - y_1^\perp$$. The left-hand side belongs to $$Y$$, while the right-hand side belongs to $$Y^\perp$$. Hence both sides lie in $$Y \cap Y^\perp = \{0\}$$. Thus $$y_1 = y_2$$ and $$y_1^\perp = y_2^\perp$$.
 
-3) First, $Y \subseteq (Y^\perp)^\perp$ is immediate from the definition. Conversely, let $x \in (Y^\perp)^\perp$. By (2), write uniquely $x = y + y^\perp$ with $y \in Y$ and $y^\perp \in Y^\perp$. Since $x \in (Y^\perp)^\perp$ and $y^\perp \in Y^\perp$, we have:
+3) First, $$Y \subseteq (Y^\perp)^\perp$$ is immediate from the definition. Conversely, let $$x \in (Y^\perp)^\perp$$. By (2), write uniquely $$x = y + y^\perp$$ with $$y \in Y$$ and $$y^\perp \in Y^\perp$$. Since $$x \in (Y^\perp)^\perp$$ and $$y^\perp \in Y^\perp$$, we have:
   $$ 0 = \langle x, y^\perp \rangle = \langle y + y^\perp, y^\perp \rangle = \langle y, y^\perp \rangle + \langle y^\perp, y^\perp \rangle = 0 + \|y^\perp\|^2. $$
-Hence $y^\perp = 0$, so $x = y \in Y$. Therefore $(Y^\perp)^\perp \subseteq Y$, and we conclude $(Y^\perp)^\perp = Y$.
+Hence $$y^\perp = 0$$, so $$x = y \in Y$$. Therefore $$(Y^\perp)^\perp \subseteq Y$$, and we conclude $$(Y^\perp)^\perp = Y$$.
 
 </details>
 </details>
@@ -194,82 +195,125 @@ Hence $y^\perp = 0$, so $x = y \in Y$. Therefore $(Y^\perp)^\perp \subseteq Y$, 
 <details markdown="1" id="riesz-lax-milgram">
 <summary><strong>Riesz Representation and Lax‑Milgram Theorems</strong></summary>
 
-$\color{Teal}{\textbf{Definition 4.1}}$ **Bounded linear functional**. Let $X$ be a normed space over $\mathbb{C}$ (or $\mathbb{R}$). A linear map $\ell : X \to \mathbb{C}$ is called a **linear functional**. It is bounded if there exists a constant $C \geq 0$ such that
+$$\color{Teal}{\textbf{Definition 4.1}}$$ **Bounded linear functional**. Let $$X$$ be a normed space over $$\mathbb{C}$$ (or $$\mathbb{R}$$). A linear map $$\ell : X \to \mathbb{C}$$ is called a **linear functional**. It is bounded if there exists a constant $$C \geq 0$$ such that
 $$ |\ell(x)| \le C \|x\| \quad \forall x \in X. $$
-The space of all bounded linear functionals on $X$ is denoted by $X^*$ and is called the **dual space** of $X$. It is a Banach space with the norm
+The space of all bounded linear functionals on $$X$$ is denoted by $$X^*$$ and is called the **dual space** of $$X$$. It is a Banach space with the norm
 $$ \|\ell\|_{X^*} := \sup_{x \neq 0} \frac{|\ell(x)|}{\|x\|}. $$
 
 ---
 
-$\color{Teal}{\textbf{Theorem 4.2 (Riesz Representation Theorem)}}$ Let $H$ be a Hilbert space over $\mathbb{C}$ (or $\mathbb{R}$) with inner product $\langle \cdot, \cdot \rangle$. For every bounded linear functional $\ell \in H^*$, there exists a unique vector $y_\ell \in H$ such that
+$$\color{Teal}{\textbf{Theorem 4.2 (Riesz Representation Theorem)}}$$ Let $$H$$ be a Hilbert space over $$\mathbb{C}$$ (or $$\mathbb{R}$$) with inner product $$\langle \cdot, \cdot \rangle$$. For every bounded linear functional $$\ell \in H^*$$, there exists a unique vector $$y_\ell \in H$$ such that
 $$ \ell(x) = \langle x, y_\ell \rangle \quad \forall x \in H. $$
-Moreover, $\|y_\ell\| = \|\ell\|_{H^*}$.
+Moreover, $$\|y_\ell\| = \|\ell\|_{H^*}$$.
 
 <details markdown="1">
 <summary><strong>Proof</strong></summary>
 
-If $\ell \equiv 0$, take $y_\ell = 0$. Assume $\ell \not\equiv 0$. Let $N = \ker \ell = \{ x \in H : \ell(x) = 0 \}$. Since $\ell$ is continuous (bounded), $N$ is a closed subspace of $H$. By the orthogonal decomposition theorem (Property 3.3), we have
+If $$\ell \equiv 0$$, take $$y_\ell = 0$$. Assume $$\ell \not\equiv 0$$. Let $$N = \ker \ell = \{ x \in H : \ell(x) = 0 \}$$. Since $$\ell$$ is continuous (bounded), $$N$$ is a closed subspace of $$H$$. By the orthogonal decomposition theorem (Property 3.3), we have
 $$ H = N \oplus N^\perp, \quad \text{with } N^\perp \neq \{0\}. $$
-Choose $z \in N^\perp$ such that $\ell(z) = 1$ (possible because $\ell$ is not zero on $N^\perp$). For any $x \in H$, write
+Choose $$z \in N^\perp$$ such that $$\ell(z) = 1$$ (possible because $$\ell$$ is not zero on $$N^\perp$$). For any $$x \in H$$, write
 $$ x = \left( x - \ell(x) z \right) + \ell(x) z. $$
-The first term is in $N$ since $\ell(x - \ell(x) z) = \ell(x) - \ell(x)\ell(z) = 0$. Hence,
+The first term is in $$N$$ since $$\ell(x - \ell(x) z) = \ell(x) - \ell(x)\ell(z) = 0$$. Hence,
 $$ \langle x, z \rangle = \langle x - \ell(x) z, z \rangle + \ell(x) \langle z, z \rangle = \ell(x) \|z\|^2. $$
 Thus
 $$ \ell(x) = \left\langle x, \frac{z}{\|z\|^2} \right\rangle. $$
-So $y_\ell = z / \|z\|^2$ works.
+So $$y_\ell = z / \|z\|^2$$ works.
 
-Uniqueness: if $y_1, y_2 \in H$ both represent $\ell$, then $\langle x, y_1 - y_2 \rangle = 0$ for all $x \in H$; taking $x = y_1 - y_2$ gives $y_1 = y_2$.
+Uniqueness: if $$y_1, y_2 \in H$$ both represent $$\ell$$, then $$\langle x, y_1 - y_2 \rangle = 0$$ for all $$x \in H$$; taking $$x = y_1 - y_2$$ gives $$y_1 = y_2$$.
 
 For the norm equality, we have
 $$ \|\ell\| = \sup_{\|x\|=1} |\langle x, y_\ell \rangle| \le \|y_\ell\|, $$
-and taking $x = y_\ell/\|y_\ell\|$ gives equality. $\square$
+and taking $$x = y_\ell/\|y_\ell\|$$ gives equality. $$\square$$
 
 </details>
 
 ---
 
-$\color{Teal}{\textbf{Definition 4.3}}$ **Bilinear forms and coercivity**. Let $H$ be a Hilbert space. A map $a: H \times H \to \mathbb{C}$ is a **sesquilinear form** (or bilinear if real) if it is linear in the first argument and conjugate‑linear in the second. It is:
+$$\color{Teal}{\textbf{Definition 4.3}}$$ **Bilinear forms and coercivity**. Let $$H$$ be a Hilbert space. A map $$a: H \times H \to \mathbb{C}$$ is a **sesquilinear form** (or bilinear if real) if it is linear in the first argument and conjugate‑linear in the second. It is:
 
-- **bounded** if there exists $M > 0$ such that
+- **bounded** if there exists $$M > 0$$ such that
   $$ |a(u,v)| \le M \|u\| \|v\| \quad \forall u,v \in H; $$
-- **coercive** (or **elliptic**) if there exists $\alpha > 0$ such that
+- **coercive** (or **elliptic**) if there exists $$\alpha > 0$$ such that
   $$ \operatorname{Re} a(u,u) \ge \alpha \|u\|^2 \quad \forall u \in H. $$
 
 ---
 
-$\color{Teal}{\textbf{Theorem 4.4 (Lax‑Milgram Theorem)}}$ Let $H$ be a Hilbert space and let $a: H \times H \to \mathbb{C}$ be a bounded, coercive sesquilinear form. Then for every bounded linear functional $\ell \in H^*$, there exists a unique $u \in H$ such that
+$$\color{Teal}{\textbf{Theorem 4.4 (Lax‑Milgram Theorem)}}$$ Let $$H$$ be a Hilbert space and let $$a: H \times H \to \mathbb{C}$$ be a bounded, coercive sesquilinear form. Then for every bounded linear functional $$\ell \in H^*$$, there exists a unique $$u \in H$$ such that
 $$ a(u,v) = \ell(v) \quad \forall v \in H. $$
-Moreover, the solution satisfies $\|u\| \le \frac{1}{\alpha} \|\ell\|_{H^*}$.
+Moreover, the solution satisfies $$\|u\| \le \frac{1}{\alpha} \|\ell\|_{H^*}$$.
 
 <details markdown="1">
 <summary><strong>Proof</strong></summary>
 
-For each fixed $u \in H$, the map $v \mapsto a(u,v)$ is a bounded linear functional on $H$. By the Riesz Representation Theorem, there exists a unique vector $T u \in H$ such that
+For each fixed $$u \in H$$, the map $$v \mapsto a(u,v)$$ is a bounded linear functional on $$H$$. By the Riesz Representation Theorem, there exists a unique vector $$T u \in H$$ such that
 $$ a(u,v) = \langle v, T u \rangle \quad \forall v \in H. $$
-This defines an operator $T: H \to H$. We check its properties:
+This defines an operator $$T: H \to H$$. We check its properties:
 
-- **Boundedness**: for all $u \in H$,
+- **Boundedness**: for all $$u \in H$$,
   $$ \|T u\|^2 = |\langle T u, T u \rangle| = |a(u, T u)| \le M \|u\| \|T u\| \quad \Rightarrow \quad \|T u\| \le M \|u\|. $$
-- **Coercivity**: for all $u \in H$,
+- **Coercivity**: for all $$u \in H$$,
   $$ \alpha \|u\|^2 \le \operatorname{Re} a(u,u) = \operatorname{Re} \langle u, T u \rangle \le \|u\| \|T u\| \quad \Rightarrow \quad \alpha \|u\| \le \|T u\|. $$
 
-Thus $T$ is bounded below and injective. Moreover, its range $R(T)$ is closed: if $T u_n \to w$, then $(T u_n)$ is Cauchy, and from $\alpha \|u_n - u_m\| \le \|T u_n - T u_m\|$, we get $(u_n)$ Cauchy, so $u_n \to u$, and by continuity $T u_n \to T u = w$. Hence $R(T)$ is closed.
+Thus $$T$$ is bounded below and injective. Moreover, its range $$R(T)$$ is closed: if $$T u_n \to w$$, then $$(T u_n)$$ is Cauchy, and from $$\alpha \|u_n - u_m\| \le \|T u_n - T u_m\|$$, we get $$(u_n)$$ Cauchy, so $$u_n \to u$$, and by continuity $$T u_n \to T u = w$$. Hence $$R(T)$$ is closed.
 
-We show $R(T) = H$. If not, there exists $w \in R(T)^\perp$, $w \neq 0$. Then
+We show $$R(T) = H$$. If not, there exists $$w \in R(T)^\perp$$, $$w \neq 0$$. Then
 $$ 0 = \langle w, T w \rangle = a(w,w) \quad \Rightarrow \quad \alpha \|w\|^2 \le \operatorname{Re} a(w,w) = 0, $$
-which forces $w = 0$, a contradiction. Therefore $T$ is surjective.
+which forces $$w = 0$$, a contradiction. Therefore $$T$$ is surjective.
 
-Now, for a given $\ell \in H^*$, Riesz gives $f \in H$ such that $\ell(v) = \langle v, f \rangle$ for all $v$. Since $T$ is bijective, there exists a unique $u \in H$ with $T u = f$. Hence
+Now, for a given $$\ell \in H^*$$, Riesz gives $$f \in H$$ such that $$\ell(v) = \langle v, f \rangle$$ for all $$v$$. Since $$T$$ is bijective, there exists a unique $$u \in H$$ with $$T u = f$$. Hence
 $$ a(u,v) = \langle v, T u \rangle = \langle v, f \rangle = \ell(v) \quad \forall v \in H. $$
 
-Finally, taking $v = u$ in the equation:
+Finally, taking $$v = u$$ in the equation:
 $$ \alpha \|u\|^2 \le \operatorname{Re} a(u,u) = \operatorname{Re} \ell(u) \le \|\ell\| \|u\|, $$
-so $\|u\| \le \frac{1}{\alpha} \|\ell\|$. Uniqueness follows from coercivity. $\square$
+so $$\|u\| \le \frac{1}{\alpha} \|\ell\|$$. Uniqueness follows from coercivity. $$\square$$
 
 </details>
 
 ---
 
-$\color{Teal}{\textbf{Remark 4.5}}$ The Lax‑Milgram theorem is the cornerstone of the analysis of variational problems arising in partial differential equations. In the context of the Finite Element Method, it guarantees the well‑posedness (existence, uniqueness, and stability) of the weak formulation of elliptic boundary value problems. The coercivity constant $\alpha$ directly affects the condition number of the discrete system, and the boundedness constant $M$ appears in error estimates (Céa's lemma). In Density Functional Theory, similar variational structures appear in the Kohn–Sham equations, where the theorem supports the analysis of the associated nonlinear eigenvalue problems.
+$$\color{Teal}{\textbf{Remark 4.5}}$$ The Lax‑Milgram theorem is the cornerstone of the analysis of variational problems arising in partial differential equations. In the context of the Finite Element Method, it guarantees the well‑posedness (existence, uniqueness, and stability) of the weak formulation of elliptic boundary value problems. The coercivity constant $$\alpha$$ directly affects the condition number of the discrete system, and the boundedness constant $$M$$ appears in error estimates (Céa's lemma). In Density Functional Theory, similar variational structures appear in the Kohn–Sham equations, where the theorem supports the analysis of the associated nonlinear eigenvalue problems.
+
+</details>
+
+<details markdown="1" id="application-laplace">
+<summary><strong>Application: Laplace Membrane Equation with Homogeneous Boundary Conditions</strong></summary>
+
+$$\color{Teal}{\textbf{Problem statement}}$$ Let $$\Omega \subset \mathbb{R}^d$$ be a bounded Lipschitz domain. We seek the vertical displacement $$u$$ of a membrane subjected to a transverse load $$f$$, with the boundary fixed at zero (homogeneous Dirichlet conditions):
+$$ -\Delta u = f \quad \text{in } \Omega, \qquad u = 0 \quad \text{on } \partial \Omega. $$
+
+$$\color{Teal}{\textbf{Weak formulation (variational form)}}$$ Multiply the PDE by a test function $$v \in H_0^1(\Omega)$$ and integrate over $$\Omega$$:
+$$ \int_\Omega (-\Delta u) \, v \, dx = \int_\Omega f \, v \, dx. $$
+Applying Green's first identity (integration by parts):
+$$ \int_\Omega \nabla u \cdot \nabla v \, dx - \int_{\partial \Omega} \frac{\partial u}{\partial n} v \, dS = \int_\Omega f v \, dx. $$
+Since $$v = 0$$ on $$\partial \Omega$$, the boundary term vanishes. The problem reduces to: find $$u \in H_0^1(\Omega)$$ such that
+$$ a(u,v) = \ell(v) \quad \forall v \in H_0^1(\Omega), $$
+where the bilinear form $$a$$ and the linear functional $$\ell$$ are defined as
+$$ a(u,v) := \int_\Omega \nabla u \cdot \nabla v \, dx, \qquad \ell(v) := \int_\Omega f v \, dx. $$
+
+$$\color{Teal}{\textbf{Verification of the Lax‑Milgram hypotheses}}$$
+
+1. **Boundedness of $$a$$**: By the Cauchy‑Schwarz inequality,
+   $$ |a(u,v)| \le \|\nabla u\|_{L^2} \|\nabla v\|_{L^2} \le \|u\|_{H^1} \|v\|_{H^1}, $$
+   hence $$a$$ is bounded with constant $$M=1$$.
+
+2. **Coercivity of $$a$$**: By the Poincaré inequality, there exists a constant $$C_P > 0$$ (depending only on $$\Omega$$) such that
+   $$ \|u\|_{L^2} \le C_P \|\nabla u\|_{L^2} \quad \forall u \in H_0^1(\Omega). $$
+   Therefore,
+   $$ \|u\|_{H^1}^2 = \|u\|_{L^2}^2 + \|\nabla u\|_{L^2}^2 \le (C_P^2 + 1) \|\nabla u\|_{L^2}^2. $$
+   Consequently,
+   $$ a(u,u) = \|\nabla u\|_{L^2}^2 \ge \frac{1}{C_P^2 + 1} \|u\|_{H^1}^2, $$
+   so $$a$$ is coercive with $$\alpha = 1/(C_P^2 + 1) > 0$$.
+
+3. **Boundedness of $$\ell$$**: Again by Cauchy‑Schwarz,
+   $$ |\ell(v)| \le \|f\|_{L^2} \|v\|_{L^2} \le \|f\|_{L^2} \|v\|_{H^1}, $$
+   so $$\ell$$ is a bounded linear functional on $$H_0^1(\Omega)$$, with $$\|\ell\|_{(H_0^1)^*} \le \|f\|_{L^2}$$.
+
+$$\color{Teal}{\textbf{Existence and uniqueness of the weak solution}}$$ Since all hypotheses of the Lax‑Milgram theorem are satisfied, there exists a **unique** weak solution $$u \in H_0^1(\Omega)$$ to the membrane problem. This solution is the variational (or weak) counterpart of the classical solution, and it is the one that can be approximated numerically.
+
+$$\color{Teal}{\textbf{Connection to the Finite Element Method (Galerkin approximation)}}$$ The weak formulation is the natural starting point for the FEM. Let $$V_h \subset H_0^1(\Omega)$$ be a finite‑dimensional subspace (e.g., continuous piecewise linear polynomials over a triangulation of $$\Omega$$). The discrete problem reads: find $$u_h \in V_h$$ such that
+$$ a(u_h, v_h) = \ell(v_h) \quad \forall v_h \in V_h. $$
+Since $$V_h$$ inherits the coercivity of $$a$$ (with the same constant $$\alpha$$), the discrete system is well‑posed and the associated stiffness matrix is positive definite. Moreover, the boundedness and coercivity allow us to apply **Céa's lemma**, which gives the quasi‑optimal error estimate
+$$ \|u - u_h\|_{H^1} \le \frac{M}{\alpha} \inf_{v_h \in V_h} \|u - v_h\|_{H^1}. $$
+This inequality guarantees that the FEM converges at the optimal rate dictated by the interpolation error as the mesh size $$h \to 0$$, fully justifying the method from a functional analytic perspective.
 
 </details>
