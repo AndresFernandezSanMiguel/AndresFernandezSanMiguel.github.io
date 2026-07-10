@@ -129,6 +129,30 @@ $\color{Teal}{\textbf{Definition 3.1}}$ **Hilbert space**. Linear space $X$ endo
 
 $\color{Teal}{\textbf{Definition 3.2}}$ **Ortogonal space**. Let $Y \subseteq X$ be a linear subset; the orthogonal space is represented as $Y^\perp=\left\lbrace x \in X: \langle x,y \rangle=0 \forall y \in Y \right\rbrace$
 
+$\color{Teal}{\textbf{Theorem (Best Approximation in Hilbert spaces)}}$ Let $X$ be a Hilbert space over $\mathbb{C}$ and let $K \subset X$ be a nonempty, closed, and convex subset. Then for every $x \in X$ there exists a unique point $z \in K$ such that
+$$ \|x - z\| = \operatorname{dist}(x, K) := \inf_{y \in K} \|x - y\|. $$
+
+<details markdown="1">
+<summary><strong>Proof</strong></summary>
+
+Let $d := \operatorname{dist}(x, K)$. By definition of infimum, there exists a sequence $(z_n) \subset K$ such that $\|x - z_n\| \to d$. We show that $(z_n)$ is Cauchy.
+
+Using the parallelogram identity,
+$$ \|z_n - z_m\|^2 = 2\|z_n - x\|^2 + 2\|z_m - x\|^2 - 4\left\| \frac{z_n + z_m}{2} - x \right\|^2. $$
+Since $K$ is convex, $\frac{z_n + z_m}{2} \in K$, so $\left\| \frac{z_n + z_m}{2} - x \right\| \ge d$. Hence
+$$ \|z_n - z_m\|^2 \le 2\|z_n - x\|^2 + 2\|z_m - x\|^2 - 4d^2. $$
+As $n,m \to \infty$, the right-hand side tends to $2d^2 + 2d^2 - 4d^2 = 0$. Thus $(z_n)$ is Cauchy. Since $X$ is complete and $K$ is closed, $(z_n)$ converges to some $z \in K$. By continuity of the norm, $\|x - z\| = \lim_{n \to \infty} \|x - z_n\| = d$.
+
+To prove uniqueness, suppose $z_1, z_2 \in K$ both satisfy $\|x - z_1\| = \|x - z_2\| = d$. By convexity, $\frac{z_1 + z_2}{2} \in K$, so
+$$ d \le \left\| x - \frac{z_1 + z_2}{2} \right\| \le \frac{1}{2}\|x - z_1\| + \frac{1}{2}\|x - z_2\| = d. $$
+Thus equality holds in the triangle inequality, which implies $z_1 = z_2$ (or, more rigorously, by the parallelogram identity:
+$$ \|z_1 - z_2\|^2 = 2\|z_1 - x\|^2 + 2\|z_2 - x\|^2 - 4\left\| x - \frac{z_1 + z_2}{2} \right\|^2 \le 2d^2 + 2d^2 - 4d^2 = 0). $$
+Hence $z_1 = z_2$.
+
+</details>
+
+---
+
 $\color{Teal}{\textbf{Properties 3.3}}$ If $X$ is a Hilbert space over $\mathbb{C}$ and $Y \subseteq X$ is a closed subspace, the following properties are verified:
 
 1. $Y^\perp$ is also a closed linear subspace.
@@ -144,7 +168,7 @@ Since $y \in Y$ was arbitrary, we get $x \in Y^\perp$. Hence $Y^\perp$ is closed
 
 2) First, note that $Y \cap Y^\perp = \{0\}$, since if $z \in Y \cap Y^\perp$, then $\langle z, z \rangle = 0$, so $z=0$.
 
-Now, let $x \in X$ be fixed. Since $Y$ is closed and convex, there exists $y_0 \in Y$ such that $\|x - y_0\| = \operatorname{dist}(x, Y)$ (the infimum is attained). We claim that $x - y_0 \in Y^\perp$. Define $v := x - y_0$. Take any $z \in Y$ and any real $t \in \mathbb{R}$. Since $Y$ is a linear subspace, $y_0 + tz \in Y$, and by the minimality of $y_0$,
+Now, let $x \in X$ be fixed. Since $Y$ is a closed subspace (hence convex and nonempty), the Best Approximation Theorem ensures the existence of a unique $y_0 \in Y$ such that $\|x - y_0\| = \operatorname{dist}(x, Y)$. We claim that $x - y_0 \in Y^\perp$. Define $v := x - y_0$. Take any $z \in Y$ and any real $t \in \mathbb{R}$. Since $Y$ is a linear subspace, $y_0 + tz \in Y$, and by the minimality of $y_0$,
   $$ \|v\|^2 \le \|v - tz\|^2 = \|v\|^2 - 2t \,\operatorname{Re}\langle v, z \rangle + t^2 \|z\|^2. $$
 Hence, for all $t \in \mathbb{R}$,
   $$ 0 \le -2t \,\operatorname{Re}\langle v, z \rangle + t^2 \|z\|^2. $$
