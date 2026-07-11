@@ -33,6 +33,8 @@ We present the theoretical basis for using our [SAOAS](https://github.com/Andres
 
 If you are a fan of Beamer presentations $$\Rightarrow$$ [Download Presentation (PDF)](/files/prue.pdf)
 
+To view the animations $\Rightarrow$ [Adobe](https://get.adobe.com/es/reader/)
+
 **Tutorial 2 $$\Rightarrow$$ Installation of SAOAS**
 
 <img src="/images/logo_saoas_trans.png" width="300">
