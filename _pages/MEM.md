@@ -37,7 +37,7 @@ If you are a fan of Beamer presentations $$\Rightarrow$$ [Download Presentation 
 
 <img src="/images/logo_saoas_trans.png" width="300">
 
-- **Source code** $\Rightarrow$ [Download SAOAS](https://github.com/AndresFernandezSanMiguel/MEM-Linear)
+- **Source code** $\Rightarrow$ [Download SAOAS](https://github.com/AndresFernandezSanMiguel/MEM-Linear/archive/main.zip))
 - **Eigen and Spectra** $\Rightarrow$ [Download](https://spectralib.org/download)
 - **VMD** $\Rightarrow$ [Download](https://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=VMD)
 
