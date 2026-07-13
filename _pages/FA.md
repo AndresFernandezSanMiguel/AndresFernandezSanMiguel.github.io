@@ -4,7 +4,7 @@ permalink: /FA/
 author_profile: true
 ---
 
-Some notes on Functional Analysis with a focus on its application to the Finite Element Method and maybe Density Functional Theory.
+Some notes on Functional Analysis with a focus on its application to the Finite Element Method and Density Functional Theory.
 
 ## Contents
 
