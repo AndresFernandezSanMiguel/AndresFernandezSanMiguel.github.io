@@ -65,5 +65,5 @@ To view the animations $\Rightarrow$ [Adobe](https://get.adobe.com/es/reader/)
 
 [Input files](https://github.com/AndresFernandezSanMiguel/MEM-Linear)
 
-{% include video.html id="LTGzBpo-hRM&t" provider="youtube" %}
+{% include video.html id="LTGzBpo" provider="youtube" %}
 
