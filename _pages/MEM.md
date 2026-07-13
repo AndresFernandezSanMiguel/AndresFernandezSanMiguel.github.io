@@ -59,5 +59,11 @@ To view the animations $\Rightarrow$ [Adobe](https://get.adobe.com/es/reader/)
 
 {% include video.html id="PGOkOO_9DQU" provider="youtube" %}
 
+**Tutorial 4 $$\Rightarrow$$ Static Analysis*
 
+- Bending of carbon nanotube with cantilever boundary conditions.
+
+[Input files](https://github.com/AndresFernandezSanMiguel/MEM-Linear)
+
+{% include video.html id="LTGzBpo-hRM&t" provider="youtube" %}
 
