@@ -6,7 +6,7 @@ permalink: /publication/linear-nonlinear-elastic-analysis-molecular-structures/
 date: 2026-10-10 
 venue: "Computational Particle Mechanics"
 paperurl: "https://www.sciencedirect.com/science/article/pii/S2196438626003037" 
-citation: "Fernández-San Miguel, A., Ramírez, L., Couceiro, I., Navarrina, F., & Verduzco, J. C. (2025). Linear and nonlinear elastic analysis of molecular structures using an exact atomistic approach based on geometry and potential energy including non-bonded interactions. [REVISAR: Revista, volumen, páginas]."
+citation: "Fernández-San Miguel, A., Ramírez, L., Couceiro, I., Navarrina, F., & Verduzco, J. C. (2026). Linear and nonlinear elastic analysis of molecular structures using an exact atomistic approach based on geometry and potential energy including non-bonded interactions. Computational Particle Mechanics."
 excerpt: "A novel exact atomistic approach for the linear and nonlinear elastic analysis of molecular structures, formulated directly in terms of geometry and potential energy, including non-bonded interactions."
 author_profile: true
 ---
