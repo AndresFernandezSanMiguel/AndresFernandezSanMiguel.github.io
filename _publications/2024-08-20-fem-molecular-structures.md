@@ -19,4 +19,4 @@ author_profile: true
 
 This work presents a first-order FEM-based formulation for the analysis of molecular structures with bonded interactions.
 
-[Read the article](https://link.springer.com/article/10.1007/s00366-024-02085-w)
+[Read the article](https://link.springer.com/article/10.1007/s00366-024-02085-w) 
